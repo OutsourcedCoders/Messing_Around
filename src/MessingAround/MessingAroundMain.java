@@ -13,7 +13,7 @@ public class MessingAroundMain{
         userInput = sc.next();
         
         switch (userInput.toUpperCase()) {
-            case "GOOD":                                                        //ANDY'S WORK
+            case "GOOD":                                                        //ANDY'S WORK TESTING
                 System.out.println("That's good to hear");
                 userAnswered = true;
                 break;
