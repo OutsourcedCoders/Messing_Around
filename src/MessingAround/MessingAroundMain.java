@@ -1,6 +1,6 @@
 package MessingAround;
 
-public class MessingAroundMain extends userInput{
+public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
         while(userAnswered == false) {
         System.out.print("Hey, how are yah?: ");
