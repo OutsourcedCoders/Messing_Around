@@ -27,14 +27,13 @@ public class MessingAroundMain extends UserInputs{
                 userInput = sc.next();
                 break;
             }
+        }
         //userInput = sc.next();                                                  //Jorge's work (also testing)
         System.out.println("Hey, My name's MessingAroundMain.java");
         
-        }
-        
         userAnswered = false;                                                   //Testing more userInput
         while(userAnswered == false) {
-            System.out.print("What kinda game would you like to play?");
+            System.out.print("What kinda game would you like to play?\n");
             userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
                 case "INSERT GAME NAME HERE":
