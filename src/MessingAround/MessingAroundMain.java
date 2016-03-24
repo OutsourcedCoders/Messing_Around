@@ -4,7 +4,8 @@ package MessingAround;
 //  Brought to you by:
 //  Jasonface900
 //  YourAverageRandy
-//  on March 24th, 2016.
+//  and created on:
+//  March 23th, 2016
 //  --------------------
 public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
