@@ -2,9 +2,9 @@ package MessingAround;
 
 public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
-        while(userAnswered == false) {
+        while(!userAnswered) {
         System.out.print("Hey, how are yah?: ");
-        userInput = sc.next();
+        userInput = sc.nextLine();
         
         switch (userInput.toUpperCase()) {
             case "GOOD":                                                        //ANDY'S WORK TESTING
@@ -28,20 +28,20 @@ public class MessingAroundMain extends UserInputs{
                 break;
             }
         }
-        //userInput = sc.next();                                                  //Jorge's work (also testing)
+        //userInput = sc.next();                                                //Jorge's work (also testing)
         System.out.println("Hey, My name's MessingAroundMain.java");
-        
         userAnswered = false;                                                   //Testing more userInput
-        while(userAnswered == false) {
+        while(!userAnswered) {
             System.out.print("What kinda game would you like to play?\n");
             userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
                 case "INSERT GAME NAME HERE":
                     System.out.println("\nAlright.");
+                    userGame = userInput;
                     userAnswered = true;
                     break;
                 default:
-                    System.out.println("\nPlease input a valid game");
+                    System.out.println(userInput);
                     break;
             }
         }
