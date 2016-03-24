@@ -3,7 +3,7 @@ package MessingAround;
 public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
         while(userAnswered == false) {
-        System.out.print("Hey, how are yah?: ");
+        System.out.print("Hey, how are yah?\n : ");
         userInput = sc.next();
         
         switch (userInput.toUpperCase()) {
@@ -23,17 +23,14 @@ public class MessingAroundMain extends UserInputs{
                 System.out.println("That's fine.");
                 userAnswered = true;
             default: 
-                System.out.println("Please input a valid response");
+                System.out.println("Please input a valid response :");
                 userInput = sc.next();
                 break;
             }
         }
-        //userInput = sc.next();                                                  //Jorge's work (also testing)
-        System.out.println("Hey, My name's MessingAroundMain.java");
-        
         userAnswered = false;                                                   //Testing more userInput
         while(userAnswered == false) {
-            System.out.print("What kinda game would you like to play?\n");
+            System.out.print("What kinda game would you like to play?\n :");
             userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
                 case "INSERT GAME NAME HERE":
