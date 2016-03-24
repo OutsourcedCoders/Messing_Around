@@ -1,10 +1,6 @@
 package MessingAround;
-import java.util.Scanner;
 
-public class MessingAroundMain{
-    public static Scanner sc = new Scanner(System.in);
-    public static String userInput = "User";
-    public static boolean userAnswered = false;
+public class MessingAroundMain extends userInput{
     public static void main(String[] args) {
         while(userAnswered == false) {
         System.out.print("Hey, how are yah?: ");
@@ -25,6 +21,7 @@ public class MessingAroundMain{
                 break;
             case "OK":
                 System.out.println("That's fine.");
+                userAnswered = true;
             default: 
                 System.out.println("Please input a valid response");
                 userInput = sc.next();
