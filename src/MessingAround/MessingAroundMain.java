@@ -17,8 +17,8 @@ public class MessingAroundMain extends UserInputs{
             case "GOOD":                                                        //ANDY'S WORK TESTING
                 System.out.println("That's good to hear.");
                 userAnswered = true;
-                break;                                                          //Jorge: Added some new case
-            case "BAD":                                                         //statements
+                break;                                                          //Jorge: Added some new case statements
+            case "BAD":
                 System.out.println("That's just too bad.");
                 userAnswered = true;
                 break;
