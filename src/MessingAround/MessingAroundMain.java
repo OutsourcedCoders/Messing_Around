@@ -1,5 +1,10 @@
 package MessingAround;
-
+//    MESSING AROUND!
+//  -------------------
+//  Brought to you by:
+//  Jasonface900
+//  YourAverageRandy
+//  on March 24th, 2016.
 public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
         while(userAnswered == false) {
@@ -10,8 +15,8 @@ public class MessingAroundMain extends UserInputs{
             case "GOOD":                                                        //ANDY'S WORK TESTING
                 System.out.println("That's good to hear.");
                 userAnswered = true;
-                break;
-            case "BAD":
+                break;                                                          //Jorge: Added some new case
+            case "BAD":                                                         //statements
                 System.out.println("That's just too bad.");
                 userAnswered = true;
                 break;
@@ -22,6 +27,11 @@ public class MessingAroundMain extends UserInputs{
             case "OK":
                 System.out.println("That's fine.");
                 userAnswered = true;
+                break;
+            case "MAD":
+                System.out.println("WHY YOU MAD BRO!");
+                userAnswered = true;
+                break;
             default: 
                 System.out.println("Please input a valid response :");
                 userInput = sc.next();
@@ -29,7 +39,7 @@ public class MessingAroundMain extends UserInputs{
             }
         }
         userAnswered = false;                                                   //Testing more userInput
-        while(userAnswered == false) {
+        while(userAnswered == false){
             System.out.print("What kinda game would you like to play?\n :");
             userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
