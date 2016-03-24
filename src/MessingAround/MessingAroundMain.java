@@ -5,7 +5,7 @@ public class MessingAroundMain{
     public static Scanner sc = new Scanner(System.in);
     public static String userInput = "User";
     public static boolean userAnswered = false;
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         while(userAnswered == false) {
         System.out.print("Hey, how are yah?: ");
         userInput = sc.next();
@@ -30,24 +30,23 @@ public class MessingAroundMain{
                 userInput = sc.next();
                 break;
             }
-        userInput = sc.next();                                                  //Jorge's work (also testing)
+        //userInput = sc.next();                                                  //Jorge's work (also testing)
         System.out.println("Hey, My name's MessingAroundMain.java");
         
         }
         
-        userAnswered = false;
+        userAnswered = false;                                                   //Testing more userInput
         while(userAnswered == false) {
             System.out.print("What kinda game would you like to play?");
-            userInput = sc.next();
+            userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
-                case "*INSERT GAME NAME HERE*":
-                    System.out.println("Alright.");
+                case "INSERT GAME NAME HERE":
+                    System.out.println("\nAlright.");
                     userAnswered = true;
                     break;
                 default:
-                    System.out.println("Please input a valid game");
+                    System.out.println("\nPlease input a valid game");
                     break;
-                
             }
         }
     }
