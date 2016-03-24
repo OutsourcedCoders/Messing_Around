@@ -1,12 +1,12 @@
 package MessingAround;
-//     MESSING AROUND!
-//  --------------------
+//      MESSING AROUND!
+//  -----------------------
 //  Brought to you by:
-//  Jasonface900
-//  YourAverageRandy
+//  Jasonface900    = Jorge
+//  YourAverageRandy= Andy
 //  and created on:
 //  March 23th, 2016
-//  --------------------
+//  -----------------------
 public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
         while(userAnswered == false) {
