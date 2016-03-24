@@ -1,16 +1,22 @@
 package MessingAround;
-
+//                                                                                  MESSING AROUND!
+//                                                                               --------------------
+//                                                                               Brought to you by:
+//                                                                               Jasonface900
+//                                                                               YourAverageRandy
+//                                                                               and created on:
+//                                                                               March 23th, 2016
+//                                                                               --------------------
 public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
-        while(!userAnswered) {
         System.out.print("Hey, how are yah?: ");
+        while(!userAnswered) {
         userInput = sc.nextLine();
-        
         switch (userInput.toUpperCase()) {
-            case "GOOD":                                                        //ANDY'S WORK TESTING
+            case "GOOD"://                                                       Andy's work
                 System.out.println("That's good to hear.");
                 userAnswered = true;
-                break;
+                break;//                                                         Jorge: Added some new case statements
             case "BAD":
                 System.out.println("That's just too bad.");
                 userAnswered = true;
@@ -22,15 +28,17 @@ public class MessingAroundMain extends UserInputs{
             case "OK":
                 System.out.println("That's fine.");
                 userAnswered = true;
+                break;
+            case "MAD":
+                System.out.println("WHY YOU MAD BRO!");
+                userAnswered = true;
+                break;
             default: 
                 System.out.println("Please input a valid response");
-                userInput = sc.next();
                 break;
             }
         }
-        //userInput = sc.next();                                                //Jorge's work (also testing)
-        System.out.println("Hey, My name's MessingAroundMain.java");
-        userAnswered = false;                                                   //Testing more userInput
+        userAnswered = false;//                                                  Game Selection
         while(!userAnswered) {
             System.out.print("What kinda game would you like to play?\n");
             userInput = sc.nextLine();
