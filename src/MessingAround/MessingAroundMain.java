@@ -14,22 +14,27 @@ public class MessingAroundMain{
         
         switch (userInput.toUpperCase()) {
             case "GOOD":                                                        //ANDY'S WORK TESTING
-                System.out.println("That's good to hear");
+                System.out.println("That's good to hear.");
                 userAnswered = true;
                 break;
             case "BAD":
-                System.out.println("That's just too bad");
+                System.out.println("That's just too bad.");
                 userAnswered = true;
                 break;
             case "SO SO":
-                System.out.println("That's okay");
+                System.out.println("That's okay.");
                 userAnswered = true;
                 break;
+            case "OK":
+                System.out.println("That's fine.");
             default: 
                 System.out.println("Please input a valid response");
                 userInput = sc.next();
                 break;
             }
+        userInput = sc.next();                                                  //Jorge's work (also testing)
+        System.out.println("Hey, My name's MessingAroundMain.java");
+        
         }
     }
 }
