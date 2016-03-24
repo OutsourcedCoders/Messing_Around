@@ -11,7 +11,7 @@ public class RockPaperScissors extends UserInputs{
     static Random rpcNumGen = new Random();
         
     public static void main(String args[]) {
-            System.out.print("Welcome to Rock, Paper, Scissors");
+            System.out.println("Welcome to Rock, Paper, Scissors");
         while(!userAnswered) {//                                                 User inputs best of games
             System.out.print("Best of how many: ");
             bestOf = sc.nextInt();
@@ -22,10 +22,10 @@ public class RockPaperScissors extends UserInputs{
                 userAnswered = true;
             }
         }userAnswered = false;
-        while(userWins <= (bestOf / 2) || computerWins <= (bestOf / 2)) {
+        while(userWins <= (bestOf / 2) || computerWins <= (bestOf / 2)) {//      Keeps the game running
                 System.out.print("Please input your choice :");
                 userChoice = sc.nextLine();
-            while(!userAnswered) {
+            while(!userAnswered) {//                                             User Choice
                 switch (userChoice.toUpperCase()) {
                     case "ROCK":
                         userAnswered = true;
@@ -42,7 +42,7 @@ public class RockPaperScissors extends UserInputs{
                         break;
                 }
             }
-            switch (rpcNumGen.nextInt(3)) {
+            switch (rpcNumGen.nextInt(3)) {//                                    Computer Choice
                 case 1:
                     computerChoice = "ROCK";
                     break;
@@ -58,6 +58,39 @@ public class RockPaperScissors extends UserInputs{
             }
             if(userChoice == computerChoice) {
                 System.out.println("You tied...");
+            }
+            switch (userChoice) {//                                              Round decisions
+                case "ROCK":
+                    if(computerChoice == "SCISSORS") {
+                        System.out.println("You won this round");
+                        userWins ++;
+                    }
+                    else{
+                        System.out.println("You lost this round");
+                        computerWins ++;
+                    }break;
+                case "PAPER":
+                    if(computerChoice == "ROCK") {
+                        System.out.println("You won this round");
+                        userWins ++;
+                    }
+                    else{
+                        System.out.println("You lost this round");
+                        computerWins ++;
+                    }
+                    break;
+                case "SCISSORS":
+                    if(computerChoice == "PAPER") {
+                        System.out.println("You won this round");
+                        userWins ++;
+                    }
+                    else{
+                        System.out.println("You lsot this round");
+                        computerWins ++;
+                    }break;
+                default:
+                    System.out.println("GODDAMNIT YOU BROKE IT AGAIN");
+                    break;
             }
         }
         
