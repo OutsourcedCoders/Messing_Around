@@ -17,6 +17,10 @@ public class UserInputs {
     public static String userInput = "User";
     public static String userGame  = "None Selected";
     public static boolean userAnswered = false;
+    
+    public static boolean gotHit = false;
+    public static boolean inBattle = false;
+    
     //                                                                          -----------------------------------------
     //                                                                           Andy's Rock Paper Scissors Stuff
     public static int bestOf         = 0; 

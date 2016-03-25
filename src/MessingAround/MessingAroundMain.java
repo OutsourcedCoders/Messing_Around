@@ -1,6 +1,9 @@
 package MessingAround;
 //                                                                                  MESSING AROUND!
 //                                                                               --------------------
+
+import RockPaperScissors.RockPaperScissors;
+
 //                                                                               Brought to you by:
 //                                                                               Jasonface900
 //                                                                               YourAverageRandy
@@ -47,8 +50,14 @@ public class MessingAroundMain extends UserInputs{
                 case "ROCK PAPER SCISSORS":
                     System.out.println("\nAlright.");
                     userGame = userInput;
-                    userAnswered = true;
-                    break;
+                   userAnswered = true;
+                  /* try{
+                   Process RockPaperScissors = Runtime.getRuntime().exec("java C:/Users/Jorge/Desktop/Programming_Shit/Messing_Around/build/classes/RockPaperScissors");
+                   
+                   }catch (Exception exeption){
+                       exeption.printStackTrace();
+                   }*/
+                   break;
                 default:
                     System.out.println(userInput);
                     break;

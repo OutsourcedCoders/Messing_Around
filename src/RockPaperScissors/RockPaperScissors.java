@@ -118,7 +118,7 @@ public class RockPaperScissors extends MessingAroundMain{
         
             userAnswered = false;
             while(!userAnswered) {
-                System.out.print("Continue? ");
+                System.out.print("Continue? :");
                 userInput = sc.nextLine();
                 switch (userInput.toUpperCase()) {//                             Continue?
                     case "YES":

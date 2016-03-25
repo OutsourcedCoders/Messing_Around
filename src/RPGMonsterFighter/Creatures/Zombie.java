@@ -1,10 +1,9 @@
 package RPGMonsterFighter.Creatures;
 
-public class Zombie extends FightVars{
+import MessingAround.MessingAroundMain;
+
+public class Zombie extends MessingAroundMain{
+    
     public Creature Zombie = new Creature(100, 0, 0);
-    if (getHit = true){
     
-    }else   {
-    
-    }
 }
