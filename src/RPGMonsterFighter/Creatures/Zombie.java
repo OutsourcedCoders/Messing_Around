@@ -1,5 +1,10 @@
 package RPGMonsterFighter.Creatures;
 
-public class Zombie{
-    public Creature newZombie = new Creature(1, 1, 1);
+public class Zombie extends FightVars{
+    public Creature Zombie = new Creature(100, 0, 0);
+    if (getHit = true){
+    
+    }else   {
+    
+    }
 }

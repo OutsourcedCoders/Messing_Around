@@ -1,18 +1,8 @@
 package RockPaperScissors;
 
 import MessingAround.MessingAroundMain;
-import java.util.Random;
 
-public class RockPaperScissors extends MessingAroundMain{
-    static int bestOf         = 0;
-    static int userWins       = 0;
-    static int computerWins   = 0;
-    static int dumbRandomizer = 3;
-    static String userChoice     = "Default";
-    static String computerChoice = "Default";
-    static Random rpcNumGen = new Random();
-    static boolean gameOn = true;
-        
+public class RockPaperScissors extends MessingAroundMain{        
     public static void main(String args[]) {
             System.out.println("Welcome to Rock, Paper, Scissors");
         while(gameOn) {
