@@ -4,6 +4,6 @@ import MessingAround.MessingAroundMain;
 
 public class Zombie extends MessingAroundMain{
     
-    public Creature Zombie = new Creature(100, 0, 0);
+    public DefaultCreature Zombie = new DefaultCreature(100, 0, 0);
     
 }

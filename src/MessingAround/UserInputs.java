@@ -7,6 +7,7 @@ package MessingAround;
 //                                                                               YourAverageRandy
 //                                                                               Sci1017
 //                                                                               ----------------------------------------
+import RPGMonsterFighter.Lands.DefaultPlains;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -18,8 +19,16 @@ public class UserInputs {
     public static String userGame  = "None Selected";
     public static boolean userAnswered = false;
     
+    public static int landRandom = 10;
+    public static int healthRandom = 5;
+    public static int damageRandom = 5;
+    public static int lootRandom = 5;
+    public static int windRandom = 5;
+    public static boolean creatureRandom = false;
     public static boolean gotHit = false;
     public static boolean inBattle = false;
+    public static boolean inWorld = true;
+    //public DefaultPlains Plains = new DefaultPlains(); 
     
     //                                                                          -----------------------------------------
     //                                                                           Andy's Rock Paper Scissors Stuff

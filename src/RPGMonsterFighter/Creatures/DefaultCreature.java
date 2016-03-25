@@ -1,14 +1,14 @@
 package RPGMonsterFighter.Creatures;
 
-public class Creature {
+public class DefaultCreature {
     public int health;
     public int mana;
     public int defense;
 
-    public Creature(int defaultHealth, int defaultMana, int defaultDefense){
-        health = defaultHealth;
-        mana = defaultMana;
-        defense = defaultDefense;
+    public DefaultCreature(int dfHealth, int dfMana, int dfDefense){
+        health = dfHealth;
+        mana = dfMana;
+        defense = dfDefense;
         
     }
     public void setHealth(int newHealthVal){
