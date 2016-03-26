@@ -10,5 +10,7 @@ package RPGMonsterFighter.Encounters;
  * @author Jorge
  */
 public class Battle {
-    
+    public static void main(String[] args) {
+        System.out.println("There's nothing here.");
+    }
 }

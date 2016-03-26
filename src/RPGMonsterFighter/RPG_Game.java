@@ -26,10 +26,6 @@ public class RPG_Game extends MessingAroundMain{
         while (!inBattle  && inWorld){
             switch(rpcNumGen.nextInt(landRandom)){
                 case 0:
-                    
-                    //Plains.setWindStr(0);
-                    System.out.println("You encounter a beautiful PLAINS.");
-                    System.out.println("Wind rustles the tall grass around.");
                     System.out.println("What do you do? :");
                     
                     break;
