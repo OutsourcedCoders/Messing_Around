@@ -1,6 +1,7 @@
 package RPGMonsterFighter.Lands;
+import MessingAround.UserInputs;
 
-public class DefaultLand{
+public class DefaultLand extends UserInputs{
     public String weather;
     public int lootCnc;
     public boolean findCreature;

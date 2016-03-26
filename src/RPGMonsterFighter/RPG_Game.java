@@ -23,22 +23,6 @@ public class RPG_Game extends MessingAroundMain{
                     break;
             }
         }
-        while (!inBattle  && inWorld){
-            switch(rpcNumGen.nextInt(landRandom)){
-                case 0:
-                    System.out.println("What do you do? :");
-                    
-                    break;
-                case 1:
-                    System.out.print("You find yourself surrounded by a ");
-                    System.out.println("FOREST.");
-                    System.out.println("You hear birds singing.");
-                    break;
-                case 2:
-                    System.out.println("You see a RIVER next to you.");
-                    System.out.println("Water rushes past you.");
-                    break;
-            }
-        }
+        RPGMonsterFighter.Encounters.World.main(args);
     }
 }

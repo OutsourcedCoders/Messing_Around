@@ -1,4 +1,5 @@
 package RPGMonsterFighter.Lands;
+import static MessingAround.UserInputs.creatureHere;
 
 public class Plains extends DefaultLand{
     public int windStr;                                                                       
@@ -9,14 +10,30 @@ public class Plains extends DefaultLand{
         windStr = NewWindStrVal;
     }
     
+    public Plains NewPlains = new Plains("" , 0, false, 0);
+    
     public static void main(String[] args) {
+        creatureHere = rpcNumGen.nextBoolean();
         System.out.println("You encounter a beautiful PLAINS.");
         System.out.println("Wind rustles the tall grass around.");
         System.out.println("What do you do?");
-        System.out.println("------------------------");
-        System.out.println("| Item | Search | Move |");
-        System.out.println("------------------------");
-        System.out.println(": ");
-        
+        while(!userAnswered){
+            System.out.println("-----------------");
+            System.out.println("| Search | Move |");
+            System.out.println("-----------------");
+            System.out.println(": ");
+            userInput = sc.nextLine();
+            switch(userInput.toUpperCase()){
+                case "ITEM":
+                    //item code goes here
+                    break;
+                case "SEARCH":
+                    if(creatureHere = true){
+                        inBattle = true;
+                    }
+                    //stuff
+                    break;
+            }
+        }
     }
 }

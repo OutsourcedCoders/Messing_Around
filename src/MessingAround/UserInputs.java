@@ -23,7 +23,7 @@ public class UserInputs {
     public static int damageRandom = 5;
     public static int lootRandom = 5;
     public static int windRandom = 5;
-    public static boolean creatureRandom = false;
+    public static boolean creatureHere = false;
     public static boolean gotHit = false;
     public static boolean inBattle = false;
     public static boolean inWorld = true;

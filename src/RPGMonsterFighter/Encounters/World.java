@@ -11,7 +11,7 @@ public class World {
             
             switch(rpcNumGen.nextInt(landRandom)){
                 case 0:
-                    
+                    RPGMonsterFighter.Lands.Plains.main(args);
                     break;
                 case 1:
                     System.out.print("You find yourself surrounded by a ");
