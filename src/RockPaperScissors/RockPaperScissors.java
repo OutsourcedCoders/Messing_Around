@@ -1,7 +1,7 @@
 package RockPaperScissors;
 
 import MessingAround.UserInputs;
-
+//                                                                               Written by YourAverageRandy
 public class RockPaperScissors extends UserInputs{        
     public static void main(String args[]) {
         userAnswered = false;

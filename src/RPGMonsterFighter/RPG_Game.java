@@ -1,14 +1,16 @@
 package RPGMonsterFighter;
 import MessingAround.MessingAroundMain;
+//                                                                               Welcome to Jasonface900's game,
+//                                                                               Text RPG Simulator!
+//                                                                               Note: This is just the launcher.
 
 public class RPG_Game extends MessingAroundMain{
     
     public static void main(String[] args) {
         System.out.println("Hello, and welcome to Jasonface900's RPG Fighter");
-        System.out.println("This game was made as a test.");
         System.out.print("Ready to start the game? :");
         while (!userAnswered){
-            userInput = sc.nextLine();
+            userInput = sc.nextLine();//                                         Waits for input
             switch(userInput.toUpperCase()){
                 case "YES":
                     System.out.println("Let's get started then!");
@@ -23,6 +25,6 @@ public class RPG_Game extends MessingAroundMain{
                     break;
             }
         }
-        RPGMonsterFighter.Encounters.World.main(args);
+        RPGMonsterFighter.Encounters.World.main(args);//                         Starts game
     }
 }

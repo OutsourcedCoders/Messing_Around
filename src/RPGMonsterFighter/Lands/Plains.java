@@ -24,14 +24,12 @@ public class Plains extends DefaultLand{
             System.out.println(": ");
             userInput = sc.nextLine();
             switch(userInput.toUpperCase()){
-                case "ITEM":
-                    //item code goes here
+                case "ITEM"://                                                   item code goes here
                     break;
                 case "SEARCH":
                     if(creatureHere = true){
                         inBattle = true;
-                    }
-                    //stuff
+                    }//                                                          stuff
                     break;
             }
         }

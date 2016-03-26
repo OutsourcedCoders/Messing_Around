@@ -26,7 +26,7 @@ public class UserInputs {
     public static boolean creatureHere = false;
     public static boolean gotHit = false;
     public static boolean inBattle = false;
-    public static boolean inWorld = true;
+    public static boolean alive = true;
     //public DefaultPlains Plains = new DefaultPlains(); 
     
     //                                                                          -----------------------------------------
