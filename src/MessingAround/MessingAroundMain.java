@@ -50,6 +50,10 @@ public class MessingAroundMain extends UserInputs{
                    userAnswered = true;//                                        Stuff that will hopefully work one day...
                    RockPaperScissors.RockPaperScissors.main(args);
                    break;
+                case "RPG":
+                    System.out.println("\nHell yeah!");
+                    userAnswered = false;
+                    RPGMonsterFighter.RPG_Game.main(args);
                 default:
                     System.out.println(userInput);
                     break;
