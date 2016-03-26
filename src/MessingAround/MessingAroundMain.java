@@ -45,15 +45,10 @@ public class MessingAroundMain extends UserInputs{
             userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
                 case "ROCK PAPER SCISSORS":
-                    System.out.println("\nAlright.");
-                    userGame = userInput;//                                      Jorge:
+                   System.out.println("\nAlright.");
+                   userGame = userInput;//                                      Jorge:
                    userAnswered = true;//                                        Stuff that will hopefully work one day...
-                  /* try{ 
-                   Process RockPaperScissors = Runtime.getRuntime().exec("java C:/Users/Jorge/Desktop/Programming_Shit/Messing_Around/build/classes/RockPaperScissors");
-                   
-                   }catch (Exception exeption){
-                       exeption.printStackTrace();
-                   }*/
+                   RockPaperScissors.RockPaperScissors.main(args);
                    break;
                 default:
                     System.out.println(userInput);

@@ -7,7 +7,6 @@ package MessingAround;
 //                                                                               YourAverageRandy
 //                                                                               Sci1017
 //                                                                               ----------------------------------------
-import RPGMonsterFighter.Lands.DefaultPlains;
 import java.util.Random;
 import java.util.Scanner;
 

@@ -1,7 +1,5 @@
 package RPGMonsterFighter;
 import MessingAround.MessingAroundMain;
-import RPGMonsterFighter.Lands.DefaultPlains;
-import RPGMonsterFighter.Creatures.DefaultCreature;
 
 public class RPG_Game extends MessingAroundMain{
     

@@ -1,10 +1,11 @@
 package RockPaperScissors;
 
-import MessingAround.MessingAroundMain;
+import MessingAround.UserInputs;
 
-public class RockPaperScissors extends MessingAroundMain{        
+public class RockPaperScissors extends UserInputs{        
     public static void main(String args[]) {
-            System.out.println("Welcome to Rock, Paper, Scissors");
+        userAnswered = false;
+        System.out.println("Welcome to Rock, Paper, Scissors");
         while(gameOn) {
             while(!userAnswered) {//                                             User inputs best of games
                 System.out.print("Best of how many: ");
