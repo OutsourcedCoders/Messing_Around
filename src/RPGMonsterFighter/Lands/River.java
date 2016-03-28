@@ -1,21 +1,13 @@
 package RPGMonsterFighter.Lands;
-import static MessingAround.UserInputs.creatureHere;
 
-public class Plains extends DefaultLand{
-    public int windStr;                                                                       
-    public Plains(String dfWeather,int dfLootCnc,boolean dfFindCreature,int dfWindStr){
+public class River extends DefaultLand{
+    public River(String dfWeather, int dfLootCnc, boolean dfFindCreature){
         super(dfWeather, dfLootCnc, dfFindCreature);
     }
-    public void setWindStr(int NewWindStrVal){
-        windStr = NewWindStrVal;
-    }
-    
-    public Plains NewPlains = new Plains("" , 0, false, 0);
-    
     public static void main(String[] args) {
         creatureHere = rpcNumGen.nextBoolean();
-        System.out.println("You encounter a beautiful PLAINS.");
-        System.out.println("Wind rustles the tall grass around.");
+        System.out.println("You see a RIVER next to you.");
+        System.out.println("Water rushes past.");
         System.out.println("What do you do?");
         while(!userAnswered){
             System.out.println("-----------------");
@@ -31,7 +23,20 @@ public class Plains extends DefaultLand{
                         inBattle = true;
                         RPGMonsterFighter.Encounters.World.main(args);
                     }//                                                          stuff
-                    
+                    System.out.println("You find a " + lootRandom + ".");
+                    System.out.println("Keep item?");
+                    userInput = sc.nextLine();
+                    switch(userInput.toUpperCase()){
+                        case "YES":
+                            System.out.println("You put the " + lootRandom + " into BAG.");
+                            break;
+                        case "NO":
+                            System.out.println("You throw " + lootRandom + " away.");
+                            break;
+                        default:
+                            System.out.println("Please input a valid response.");
+                            break;
+                    }
                     break;
             }
         }
