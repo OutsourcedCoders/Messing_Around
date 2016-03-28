@@ -41,11 +41,12 @@ public class Forest extends DefaultLand{
                         default:
                             System.out.println("Please input a valid response.");
                             break;
+                        }
                     }
                     break;
                 default:
                     System.out.println("Please input a valid response.");
-                }
+                    break;
             }
         }
     }
