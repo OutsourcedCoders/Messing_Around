@@ -37,7 +37,7 @@ public class UserInputs {
     public static int dumbRandomizer = 3;
     public static String userChoice     = "Default";
     public static String computerChoice = "Default";
-    public static Random rpcNumGen = new Random();
+    public static Random NumGen = new Random();
     public static boolean gameOn = true;
     //                                                                          ------------------------------------------
     //                                                                           Ben's Game Stuff (Hopefully)

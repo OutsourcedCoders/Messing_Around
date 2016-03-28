@@ -6,7 +6,7 @@ public class World extends UserInputs{
     public static void main(String[] args) {
         while (!inBattle  && alive){
             
-            switch(rpcNumGen.nextInt(landRandom)){
+            switch(NumGen.nextInt(landRandom)){
                 case 0:
                     userAnswered = false;
                     RPGMonsterFighter.Lands.Plains.main(args);//                 Plains Encounter
@@ -42,8 +42,8 @@ public class World extends UserInputs{
                     break;
                 default:
                     userAnswered = false;
-                    System.out.println("WHAT THE EFF DID YOU DO!");
-                    System.out.println("YOU BROKE IT MAN!");
+                    System.out.println("WHAT THE EFF DID YOU DO!");//            If this shows, you broke it...
+                    System.out.println("YOU BROKE IT MAN!");//                   WHY'D YOU DO IT!!!
                     break;
             }
         }

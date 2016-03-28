@@ -16,5 +16,6 @@ public class ItemSearch extends World{
                 System.out.println("Please input a valid response.");
                 break;
         }
+        RPGMonsterFighter.Encounters.World.main(args);
     }
 }
