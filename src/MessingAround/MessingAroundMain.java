@@ -1,23 +1,23 @@
 package MessingAround;
-//      MESSING AROUND!
-//  -----------------------
-//  Brought to you by:
-//  Jasonface900    = Jorge
-//  YourAverageRandy= Andy
-//  and created on:
-//  March 23th, 2016
-//  -----------------------
+//                                                                                  MESSING AROUND!
+//                                                                               --------------------
+//                                                                               Brought to you by:
+//                                                                               Jasonface900
+//                                                                               YourAverageRandy
+//                                                                               Sci1017
+//                                                                               and created on:
+//                                                                               March 23th, 2016
+//                                                                               --------------------
 public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
-        while(userAnswered == false) {
-        System.out.print("Hey, how are yah?\n : ");
-        userInput = sc.next();
-        
+        System.out.print("Hey, how are yah?: ");
+        while(!userAnswered) {
+        userInput = sc.nextLine();
         switch (userInput.toUpperCase()) {
-            case "GOOD":                                                        //ANDY'S WORK TESTING
+            case "GOOD"://                                                       Andy's work
                 System.out.println("That's good to hear.");
                 userAnswered = true;
-                break;                                                          //Jorge: Added some new case statements
+                break;//                                                         Jorge: Added some new case statements
             case "BAD":
                 System.out.println("That's just too bad.");
                 userAnswered = true;
@@ -35,22 +35,27 @@ public class MessingAroundMain extends UserInputs{
                 userAnswered = true;
                 break;
             default: 
-                System.out.println("Please input a valid response :");
-                userInput = sc.next();
+                System.out.println("Please input a valid response");
                 break;
             }
         }
-        userAnswered = false;                                                   //Testing more userInput
-        while(userAnswered == false){
-            System.out.print("What kinda game would you like to play?\n :");
+        userAnswered = false;//                                                  Game Selection
+        while(!userAnswered) {
+            System.out.print("What kinda game would you like to play?\n");
             userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
-                case "INSERT GAME NAME HERE":
-                    System.out.println("\nAlright.");
-                    userAnswered = true;
-                    break;
+                case "ROCK PAPER SCISSORS":
+                   System.out.println("\nAlright.");
+                   userGame = userInput;//                                      Jorge:
+                   userAnswered = true;//                                        Stuff that will hopefully work one day...
+                   RockPaperScissors.RockPaperScissors.main(args);
+                   break;
+                case "RPG":
+                    System.out.println("\nHell yeah!");
+                    userAnswered = false;
+                    RPGMonsterFighter.RPG_Game.main(args);
                 default:
-                    System.out.println("\nPlease input a valid game");
+                    System.out.println(userInput);
                     break;
             }
         }
