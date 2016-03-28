@@ -45,7 +45,7 @@ public class UserInputs {
     public static int nationEventNum       = 0;
     public static int nationPopulation     = 100;
     public static int nationWealth         = 1000;
-    public static int nationWealthIncrease = 10;
+    public static int nationWealthInc = 10;
     public static int turnCount            = 0;
     public static double individualStrength = 0.1;
     public static double nationGrowthRate   = 1.1;
