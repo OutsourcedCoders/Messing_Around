@@ -41,6 +41,8 @@ public class World extends UserInputs{
         }
         if(inBattle == true){
             RPGMonsterFighter.Encounters.Battle.main(args);
+        }else if(!alive){
+            System.out.println("A great hero has FALLEN.");
         }
     }
 }
