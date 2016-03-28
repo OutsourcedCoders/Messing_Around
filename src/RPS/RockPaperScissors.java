@@ -1,10 +1,11 @@
-package RockPaperScissors;
+package RPS;
 
 import MessingAround.UserInputs;
 //                                                                               Written by YourAverageRandy
 public class RockPaperScissors extends UserInputs{        
     public static void main(String args[]) {
         userAnswered = false;
+        gameOn = true;
         System.out.println("Welcome to Rock, Paper, Scissors");
         while(gameOn) {
             while(!userAnswered) {//                                             User inputs best of games
@@ -18,6 +19,7 @@ public class RockPaperScissors extends UserInputs{
                 }
             }userAnswered = false;
             userChoice = sc.nextLine();
+            userWins = 0; computerWins = 0;
             while(userWins <= (bestOf / 2) && computerWins <= (bestOf / 2)) {//  Keeps the game running
                     System.out.print("Please input your choice: ");
                     userChoice = sc.nextLine();
@@ -123,17 +125,21 @@ public class RockPaperScissors extends UserInputs{
                 userInput = sc.nextLine();
                 switch (userInput.toUpperCase()) {//                             Continue?
                     case "YES":
+                        RockPaperScissors.main(args);
                         userAnswered = true;
                     break;
                     case "NO":
-                        System.out.println("Back to main menu?");
+                        System.out.print("Back to main menu? ");
                         gameOn = false;
                         userInput = sc.nextLine();
                         switch (userInput.toUpperCase()) {
                             case "YES":
+                                MessingAround.MessingAroundMain.main(args);
+                                userAnswered = true;
                                 break;
                             case "NO":
                                 System.out.println("See you later");
+                                userAnswered = true;
                                 break;
                             default:
                                 userInput = "NO";
