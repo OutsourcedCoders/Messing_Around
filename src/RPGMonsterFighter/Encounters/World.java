@@ -6,7 +6,7 @@ public class World extends UserInputs{
     public static void main(String[] args) {
         while (!inBattle  && alive){
             
-            switch(rpcNumGen.nextInt(landRandom)){
+            switch(NumGen.nextInt(landRandom)){
                 case 0:
                     userAnswered = false;
                     RPGMonsterFighter.Lands.Plains.main(args);//                 Plains Encounter

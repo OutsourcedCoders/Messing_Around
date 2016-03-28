@@ -5,7 +5,7 @@ public class River extends DefaultLand{
         super(dfWeather, dfLootCnc, dfFindCreature);
     }
     public static void main(String[] args) {
-        creatureHere = rpcNumGen.nextBoolean();
+        creatureHere = NumGen.nextBoolean();
         System.out.println("You see a RIVER next to you.");
         System.out.println("Water rushes past.");
         System.out.println("What do you do?");

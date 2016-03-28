@@ -9,7 +9,7 @@ public class Forest extends DefaultLand{
         amtOfTrees = newAmtOfTrees;
     }
     public static void main(String[] args) {
-        creatureHere = rpcNumGen.nextBoolean();
+        creatureHere = NumGen.nextBoolean();
         System.out.println("\nYou find yourself surrounded by a FOREST.");
         System.out.println("You hear birds singing.");
         System.out.println("What do you do?");

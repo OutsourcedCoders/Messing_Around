@@ -40,7 +40,7 @@ public class RockPaperScissors extends UserInputs{
                             break;
                     }
                 }
-                switch (rpcNumGen.nextInt(dumbRandomizer)) {//                   Computer Choice
+                switch (NumGen.nextInt(dumbRandomizer)) {//                   Computer Choice
                     case 0:
                         computerChoice = "ROCK";
                         break;

@@ -13,7 +13,7 @@ public class Plains extends DefaultLand{
     public Plains NewPlains = new Plains("" , 0, false, 0);
     
     public static void main(String[] args) {
-        creatureHere = rpcNumGen.nextBoolean();
+        creatureHere = NumGen.nextBoolean();
         System.out.println("You encounter a beautiful PLAINS.");
         System.out.println("Wind rustles the tall grass around.");
         System.out.println("What do you do?");
