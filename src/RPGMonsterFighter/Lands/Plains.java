@@ -17,23 +17,6 @@ public class Plains extends DefaultLand{
         System.out.println("You encounter a beautiful PLAINS.");
         System.out.println("Wind rustles the tall grass around.");
         System.out.println("What do you do?");
-        while(!userAnswered){
-            System.out.println("-----------------");
-            System.out.println("| Search | Move |");
-            System.out.println("-----------------");
-            System.out.print(": ");
-            userInput = sc.nextLine();
-            switch(userInput.toUpperCase()){
-                case "ITEM"://                                                   item code goes here
-                    break;
-                case "SEARCH":
-                    if(creatureHere = true){
-                        inBattle = true;
-                        RPGMonsterFighter.Encounters.World.main(args);
-                    }//                                                          stuff
-                    
-                    break;
-            }
-        }
+        RPGMonsterFighter.Encounters.ActSystem.main(args);
     }
 }

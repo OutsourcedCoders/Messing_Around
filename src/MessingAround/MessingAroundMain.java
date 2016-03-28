@@ -41,13 +41,13 @@ public class MessingAroundMain extends UserInputs{
         }
         userAnswered = false;//                                                  Game Selection
         while(!userAnswered) {
-            System.out.print("What kinda game would you like to play?\n");
+            System.out.print("What kinda game would you like to play?\n:");
             userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
                 case "ROCK PAPER SCISSORS":
                    System.out.println("\nAlright.");
                    userGame = userInput;//                                      Jorge:
-                   userAnswered = true;//                                        Stuff that will hopefully work one day...
+                   userAnswered = true;//                                        IT WORKS!
                    RPS.RockPaperScissors.main(args);
                    break;
                 case "RPG":
