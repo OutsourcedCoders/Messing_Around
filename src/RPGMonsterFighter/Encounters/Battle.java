@@ -24,6 +24,7 @@ public class Battle extends World{
                 System.out.println("Uh oh! You run across a M1S21NGN0");//       YOU BROKE IT
                 System.out.println("But nobody came.");//                        WHY?!?!?!?!
                 break;
-        } 
+        }
+        
     }
 }
