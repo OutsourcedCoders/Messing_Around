@@ -15,11 +15,12 @@ public class ActSystem extends MessingAroundMain{
                 case "ITEM"://                                                   item code goes here
                     break;
                 case "SEARCH":
+                    NumGen.nextInt(lootRandom);
                     if(creatureHere = true){
                         inBattle = true;
                         RPGMonsterFighter.Encounters.World.main(args);
                     }//                                                          stuff
-                    if(lootRandom == 3){
+                    if(lootRandom >= 3){
                         RPGMonsterFighter.Encounters.ItemSearch.main(args);
                     }
                     break;
