@@ -13,11 +13,20 @@ public class ActSystem extends MessingAroundMain{
             userInput = sc.nextLine();
             switch(userInput.toUpperCase()){
                 case "MOVE"://                                                   item code goes here
-                    System.out.println("Are you sure you want to move?/n: ");
-                    userInput = sc.nextLine();
-                    switch(userInput.toUpperCase()){
-                        case"":
-                            
+                    System.out.println("Are you sure you want to move?\n: ");
+                    while(!userAnswered){
+                        userInput = sc.nextLine();
+                        switch(userInput.toUpperCase()){
+                            case "YES":
+                                RPGMonsterFighter.Encounters.World.main(args);
+                                break;
+                            case "NO":
+                                userAnswered = true;
+                                break;
+                            default:
+                                System.out.println("Please input a valid response. \n: ");
+                                break;
+                        }
                     }
                     break;
                 case "SEARCH":
