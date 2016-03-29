@@ -7,5 +7,6 @@ public class TurnEnd extends UserInputs{
         nationPopulation = (int) (nationPopulation * (nationGrowthRate)); 
         nationStrength   = nationPopulation * individualStrength; 
         nationWealth     = nationWealth + nationWealthInc; 
+        turnCount        = turnCount + 1;
     }
 }
