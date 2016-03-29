@@ -11,6 +11,7 @@ package RPGMonsterFighter.Encounters;
  */
 public class Battle {
     public static void main(String[] args) {
-        System.out.println("There's nothing here.");
+        System.out.println("Uh oh! You run across a ");
+        System.out.println("There's no creatures here.");
     }
 }
