@@ -12,7 +12,22 @@ public class ActSystem extends MessingAroundMain{
             System.out.print(": ");
             userInput = sc.nextLine();
             switch(userInput.toUpperCase()){
-                case "ITEM"://                                                   item code goes here
+                case "MOVE"://                                                   item code goes here
+                    System.out.println("Are you sure you want to move?\n: ");
+                    while(!userAnswered){
+                        userInput = sc.nextLine();
+                        switch(userInput.toUpperCase()){
+                            case "YES":
+                                RPGMonsterFighter.Encounters.World.main(args);
+                                break;
+                            case "NO":
+                                userAnswered = true;
+                                break;
+                            default:
+                                System.out.println("Please input a valid response. \n: ");
+                                break;
+                        }
+                    }
                     break;
                 case "SEARCH":
                     NumGen.nextInt(lootRandom);

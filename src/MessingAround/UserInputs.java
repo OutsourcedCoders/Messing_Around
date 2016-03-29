@@ -22,6 +22,7 @@ public class UserInputs {
     public static int healthRandom = 5;
     public static int damageRandom = 5;
     public static int lootRandom = 5;
+    public static int creatureRandom = 8;
     public static int windRandom = 5;
     public static boolean creatureHere = false;
     public static boolean gotHit = false;

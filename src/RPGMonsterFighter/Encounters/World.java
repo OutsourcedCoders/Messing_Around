@@ -5,8 +5,8 @@ import MessingAround.UserInputs;
 public class World extends UserInputs{
     public static void main(String[] args) {
         while (!inBattle  && alive){
-            
-            switch(NumGen.nextInt(landRandom)){
+            int generatedLandRand = NumGen.nextInt(landRandom);
+            switch(generatedLandRand){
                 case 0:
                     userAnswered = false;
                     RPGMonsterFighter.Lands.Plains.main(args);//                 Plains Encounter
@@ -21,6 +21,7 @@ public class World extends UserInputs{
                     break;
                 case 3:
                     userAnswered = false;
+                    RPGMonsterFighter.Lands.Desert.main(args);//                 Desert Encounter
                     break;
                 case 4:
                     userAnswered = false;
