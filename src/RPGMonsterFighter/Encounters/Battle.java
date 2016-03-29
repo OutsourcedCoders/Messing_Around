@@ -1,16 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package RPGMonsterFighter.Encounters;
 
-/**
- *
- * @author Jorge
- */
-public class Battle {
+public class Battle extends World{
     public static void main(String[] args) {
-        System.out.println("There's nothing here.");
+        int creatureGenRand = NumGen.nextInt();
+        switch(creatureGenRand){
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            default:
+                System.out.println("Uh oh! You run across a M1S21NGN0");//       YOU BROKE IT
+                System.out.println("But nobody came.");//                        WHY?!?!?!?!
+                break;
+        } 
     }
 }

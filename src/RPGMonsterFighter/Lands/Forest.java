@@ -9,10 +9,11 @@ public class Forest extends DefaultLand{
         amtOfTrees = newAmtOfTrees;
     }
     public static void main(String[] args) {
-        creatureHere = rpcNumGen.nextBoolean();
+        creatureHere = NumGen.nextBoolean();
         System.out.println("\nYou find yourself surrounded by a FOREST.");
         System.out.println("You hear birds singing.");
         System.out.println("What do you do?");
+<<<<<<< HEAD
         while(!userAnswered){
             System.out.println("-----------------");
             System.out.println("| Search | Move |");
@@ -49,5 +50,8 @@ public class Forest extends DefaultLand{
                     break;
             }
         }
+=======
+        RPGMonsterFighter.Encounters.ActSystem.main(args);
+>>>>>>> 2dff47d1f064a7387c1986a0612f28ea706ae531
     }
 }

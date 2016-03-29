@@ -5,8 +5,8 @@ import MessingAround.UserInputs;
 public class World extends UserInputs{
     public static void main(String[] args) {
         while (!inBattle  && alive){
-            
-            switch(rpcNumGen.nextInt(landRandom)){
+            int generatedLandRand = NumGen.nextInt(landRandom);
+            switch(generatedLandRand){
                 case 0:
                     userAnswered = false;
                     RPGMonsterFighter.Lands.Plains.main(args);//                 Plains Encounter
@@ -21,6 +21,7 @@ public class World extends UserInputs{
                     break;
                 case 3:
                     userAnswered = false;
+                    RPGMonsterFighter.Lands.Desert.main(args);//                 Desert Encounter
                     break;
                 case 4:
                     userAnswered = false;
@@ -42,8 +43,8 @@ public class World extends UserInputs{
                     break;
                 default:
                     userAnswered = false;
-                    System.out.println("WHAT THE EFF DID YOU DO!");
-                    System.out.println("YOU BROKE IT MAN!");
+                    System.out.println("WHAT THE EFF DID YOU DO!");//            If this shows, you broke it...
+                    System.out.println("YOU BROKE IT MAN!");//                   WHY'D YOU DO IT!!!
                     break;
             }
         }

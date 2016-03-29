@@ -22,6 +22,7 @@ public class UserInputs {
     public static int healthRandom = 5;
     public static int damageRandom = 5;
     public static int lootRandom = 5;
+    public static int creatureRandom = 8;
     public static int windRandom = 5;
     public static boolean creatureHere = false;
     public static boolean gotHit = false;
@@ -35,10 +36,23 @@ public class UserInputs {
     public static int userWins       = 0;
     public static int computerWins   = 0;
     public static int dumbRandomizer = 3;
+    public static boolean gameOn = true;
     public static String userChoice     = "Default";
     public static String computerChoice = "Default";
-    public static Random rpcNumGen = new Random();
-    public static boolean gameOn = true;
+    public static Random NumGen = new Random();
+    
+    //                                                                           Nation Stuff
+    public static int nationNumGen         = 0;
+    public static int nationEventNum       = 0;
+    public static int nationPopulation     = 100;
+    public static int nationWealth         = 1000;
+    public static int nationWealthInc = 10;
+    public static int turnCount            = 0;
+    public static double individualStrength = 0.1;
+    public static double nationGrowthRate   = 1.1;
+    public static double nationStrength = 10;
+    public static String nationName  = "Default";
+    public static String nationEvent = "Default";
     //                                                                          ------------------------------------------
     //                                                                           Ben's Game Stuff (Hopefully)
     
