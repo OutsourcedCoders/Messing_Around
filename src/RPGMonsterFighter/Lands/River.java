@@ -6,7 +6,7 @@ public class River extends DefaultLand{
     }
     public static void main(String[] args) {
         creatureHere = NumGen.nextBoolean();
-        System.out.println("You see a RIVER next to you.");
+        System.out.println("\nYou see a RIVER next to you.");
         System.out.println("Water rushes past.");
         System.out.println("What do you do?");
         RPGMonsterFighter.Encounters.ActSystem.main(args);
