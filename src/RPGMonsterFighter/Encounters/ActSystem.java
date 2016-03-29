@@ -12,7 +12,13 @@ public class ActSystem extends MessingAroundMain{
             System.out.print(": ");
             userInput = sc.nextLine();
             switch(userInput.toUpperCase()){
-                case "ITEM"://                                                   item code goes here
+                case "MOVE"://                                                   item code goes here
+                    System.out.println("Are you sure you want to move?/n: ");
+                    userInput = sc.nextLine();
+                    switch(userInput.toUpperCase()){
+                        case"":
+                            
+                    }
                     break;
                 case "SEARCH":
                     if(creatureHere = true){
