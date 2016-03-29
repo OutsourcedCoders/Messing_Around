@@ -139,7 +139,7 @@ public class RockPaperScissors extends UserInputs{
                                 break;
                             case "NO":
                                 System.out.println("See you later");
-                                userAnswered = true;
+                                userAnswered = false;
                                 break;
                             default:
                                 userInput = "NO";

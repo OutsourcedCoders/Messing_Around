@@ -44,12 +44,17 @@ public class MessingAroundMain extends UserInputs{
             System.out.print("What kinda game would you like to play?\n:");
             userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
+                case "NATION SIMULATOR":
+                    userGame = userInput;
+                    userAnswered = true;
+                    NationSimulator.NationMain.main(args);
+                    break;
                 case "ROCK PAPER SCISSORS":
-                   System.out.println("\nAlright.");
-                   userGame = userInput;//                                      Jorge:
-                   userAnswered = true;//                                        IT WORKS!
-                   RPS.RockPaperScissors.main(args);
-                   break;
+                    System.out.println("\nAlright.");
+                    userGame = userInput;//                                      Jorge:
+                    userAnswered = true;//                                        IT WORKS!
+                    RPS.RockPaperScissors.main(args);
+                    break;
                 case "RPG":
                     System.out.println("\nHell yeah!");
                     userAnswered = false;
