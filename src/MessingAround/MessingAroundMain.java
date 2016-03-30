@@ -45,16 +45,17 @@ public class MessingAroundMain extends UserInputs{
             userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
                 case "ROCK PAPER SCISSORS":
-                   System.out.println("\nAlright.");
-                   userGame = userInput;//                                      Jorge:
-                   userAnswered = true;//                                        IT WORKS!
-                   RPS.RockPaperScissors.main(args);
-                   break;
+                    System.out.println("\nAlright.");
+                    userGame = userInput;//                                      Jorge:
+                    userAnswered = true;//                                        IT WORKS!
+                    RPS.RockPaperScissors.main(args);
+                    break;
                 case "RPG":
                     System.out.println("\nHell yeah!");
                     userAnswered = false;
                     RPGMonsterFighter.RPG_Game.main(args);
                 case "TIC TAC TOE":
+                    System.out.println("Never hate the classics");
                     TicTacToe.Game.main(args);
                     break;
                 default:

@@ -8,7 +8,7 @@ package TicTacToe;
 
 public class Game extends UserInterface{
     public static void main(String[] args) {
-        Display();
+        System.out.println("");
         userInput = sc.nextLine();
         System.out.println("What level of cpu do want to play");
         switch(userInput) {

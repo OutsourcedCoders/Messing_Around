@@ -16,9 +16,9 @@ public class Data extends UserInputs {    /**
      * Level 3 CPU knows how to block and win
      * Level 9001 CPU CANNOT lose, only tie or win.
      */
-    public static int[] Game         = {0,0,0,0,0,0,0,0,0};
-    public static int Level          = 1;
-    public static int PlayerWins     = 0;
-    public static int CPUWins        = 0;
-    public static boolean PlayerTurn = true;
+    public static int[] Game          = {0,0,0,0,0,0,0,0,0};
+    public static int Level           = 1;
+    public static int PlayerWins      = 0;
+    public static int CPUWins         = 0;
+    public static boolean PlayerFirst = true;
 }
