@@ -21,8 +21,16 @@ public class RockPaperScissors extends UserInputs{
             userChoice = sc.nextLine();
             userWins = 0; computerWins = 0;
             while(userWins <= (bestOf / 2) && computerWins <= (bestOf / 2)) {//  Keeps the game running
-                    System.out.print("Please input your choice: ");
-                    userChoice = sc.nextLine();
+                System.out.println("\t\t---------------------------------------"
+                        + "--");
+                System.out.println("\t\t|    Rock    |    Paper    |  Scissors "
+                        + " |");
+                System.out.println("User: \t\t");
+                System.out.println("Computer:\t");
+                System.out.println("\t\t---------------------------------------"
+                        + "--");
+                System.out.print("Please input your choice: ");
+                userChoice = sc.nextLine();
                 while(!userAnswered) {//                                         User Choice
                     switch (userChoice.toUpperCase()) {
                         case "ROCK":

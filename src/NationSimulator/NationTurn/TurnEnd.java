@@ -1,4 +1,4 @@
-package NationSimulator;
+package NationSimulator.NationTurn;
 
 import MessingAround.UserInputs;
 

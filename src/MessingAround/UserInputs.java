@@ -53,6 +53,7 @@ public class UserInputs {
     public static double individualStrength = 0.1;
     public static double nationGrowthRate   = 1.1;
     public static double nationStrength = 10;
+    public static boolean turnActive = true;
     public static String nationName  = "Default";
     public static String nationEvent = "Default";
     //                                                                          ------------------------------------------
