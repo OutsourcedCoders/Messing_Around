@@ -1,10 +1,11 @@
 package RPGMonsterFighter.Encounters;
 
-public class Battle extends World{
+public class MonsterChoice extends World{
     public static void main(String[] args) {
-        int creatureGenRand = NumGen.nextInt();
-        switch(creatureGenRand){
+        int creatureRandomVal = NumGen.nextInt(creatureRandom);
+        switch(creatureRandomVal){
             case 0:
+                
                 break;
             case 1:
                 break;
@@ -23,7 +24,8 @@ public class Battle extends World{
             default:
                 System.out.println("Uh oh! You run across a M1S21NGN0");//       YOU BROKE IT
                 System.out.println("But nobody came.");//                        WHY?!?!?!?!
+                inBattle = false;
                 break;
-        } 
+        }
     }
 }
