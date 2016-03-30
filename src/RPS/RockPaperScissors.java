@@ -100,6 +100,7 @@ public class RockPaperScissors extends UserInputs{
                                 System.out.println("You tied...");
                                 break;
                         }
+                        break;
                     default:
                         System.out.println("GODDAMNIT YOU BROKE IT AGAIN");
                         break;
@@ -115,7 +116,7 @@ public class RockPaperScissors extends UserInputs{
             System.out.print("You won " + userWins + " times and lost ");//      Stats
             System.out.print(computerWins + " times. ");
             System.out.print("The computer won " + computerWins + " games and ");
-            System.out.println("lost " + userWins + " times");
+            System.out.println("lost " + userWins + " times.");
         
             userAnswered = false;
             while(!userAnswered) {
