@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package TicTacToe;
 import MessingAround.UserInputs;
-/**
- *
- * @author Benja_thomp486
- */
+
 public class Data extends UserInputs {    /**
      * How Levels Work:
      * Level 1 CPU plays a random square EVERY turn
