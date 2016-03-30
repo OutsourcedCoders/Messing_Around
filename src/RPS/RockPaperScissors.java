@@ -40,7 +40,7 @@ public class RockPaperScissors extends UserInputs{
                             break;
                     }
                 }
-                switch (NumGen.nextInt(dumbRandomizer)) {//                   Computer Choice
+                switch (NumGen.nextInt(dumbRandomizer)) {//                      Computer Choice
                     case 0:
                         computerChoice = "ROCK";
                         break;
@@ -54,9 +54,7 @@ public class RockPaperScissors extends UserInputs{
                         System.out.println("GREAT JOB YOU BROKE IT!");
                         break;
                 }
-                System.out.println("You chose " + userChoice);
-                System.out.print("Computer chose ");
-                System.out.println(computerChoice.toLowerCase());
+                RPS.RPSUI.main(args);
                 switch (userChoice.toUpperCase()) {//                            Round decisions
                     case "ROCK":
                         switch(computerChoice) { 
@@ -115,7 +113,7 @@ public class RockPaperScissors extends UserInputs{
                 System.out.println("the computer!");
             }
             System.out.print("You won " + userWins + " times and lost ");//      Stats
-            System.out.println(computerWins + " times");
+            System.out.print(computerWins + " times. ");
             System.out.print("The computer won " + computerWins + " games and ");
             System.out.println("lost " + userWins + " times");
         
