@@ -1,10 +1,11 @@
 package RPGMonsterFighter.Encounters;
 
-public class Battle extends World{
+public class MonsterChoice extends World{
     public static void main(String[] args) {
-        int creatureGenRand = NumGen.nextInt();
-        switch(creatureGenRand){
+        int creatureRandomVal = NumGen.nextInt(creatureRandom);
+        switch(creatureRandomVal){
             case 0:
+                
                 break;
             case 1:
                 break;
