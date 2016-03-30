@@ -11,13 +11,14 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class UserInputs {
-    //                                                                          -----------------------------------------
+    //                                                                           ----------------------------------------
     //                                                                           Jorge's Simple Input Scanner
     public static Scanner sc = new Scanner(System.in);
     public static String userInput = "User";
     public static String userGame  = "None Selected";
     public static boolean userAnswered = false;
-    
+    //                                                                           ----------------------------------------
+    //                                                                           Jorge's 
     public static int landRandom = 10;
     public static int healthRandom = 5;
     public static int damageRandom = 5;
@@ -31,7 +32,7 @@ public class UserInputs {
     public static boolean alive = true;
     //public DefaultPlains Plains = new DefaultPlains(); 
     
-    //                                                                          -----------------------------------------
+    //                                                                           ----------------------------------------
     //                                                                           Andy's Rock Paper Scissors Stuff
     public static int bestOf         = 0; 
     public static int userWins       = 0;
