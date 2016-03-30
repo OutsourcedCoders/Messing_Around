@@ -30,7 +30,7 @@ public class ActSystem extends MessingAroundMain{
                     }
                     break;
                 case "SEARCH":
-                    NumGen.nextInt(lootRandom);
+                    
                     if(creatureHere = true){
                         inBattle = true;
                         RPGMonsterFighter.Encounters.World.main(args);
