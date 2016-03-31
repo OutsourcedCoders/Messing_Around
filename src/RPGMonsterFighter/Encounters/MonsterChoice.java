@@ -8,6 +8,7 @@ public class MonsterChoice extends World{
                 monsterChoice = 0;
                 System.out.println("Oh no!");
                 System.out.println("The smell of ROTTEN FLESH hits you.");
+                RPGMonsterFighter.Creatures.Zombie.main(args);
                 break;
             case 1:
                 monsterChoice = 1;
@@ -22,13 +23,16 @@ public class MonsterChoice extends World{
             case 3:
                 monsterChoice = 3;
                 System.out.println("Oh dear god!");
-                System.out.println("SPARKS crackle around you.");
+                System.out.println("SPARKS crackle around you!");
                 break;
             case 4:
                 monsterChoice = 4;
+                System.out.println("Watch out!");
+                System.out.println("An ARROW whizzes past!");
                 break;
             case 5:
                 monsterChoice = 5;
+                System.out.println("");
                 break;
             case 6:
                 monsterChoice = 6;
