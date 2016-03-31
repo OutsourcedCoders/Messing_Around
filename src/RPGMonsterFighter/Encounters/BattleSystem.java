@@ -12,6 +12,7 @@ public class BattleSystem extends MonsterChoice{
                 case "FIGHT":
                     switch(monsterChoice){
                         case 0:
+                            RPGMonsterFighter.Creatures.Zombie.main(args);
                             break;
                         case 1:
                             break;

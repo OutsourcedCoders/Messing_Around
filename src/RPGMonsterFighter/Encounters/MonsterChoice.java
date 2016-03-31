@@ -1,4 +1,4 @@
-package RPGMonsterFighter.Encounters;
+ package RPGMonsterFighter.Encounters;
 
 public class MonsterChoice extends World{
     public static void main(String[] args) {
