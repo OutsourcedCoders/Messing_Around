@@ -53,7 +53,16 @@ public class World extends UserInputs{
         }else if(!alive){
             System.out.println("A great hero has FALLEN.");
             System.out.print("His untimely demise was caused by ");
-            System.out.println();
+            switch(monsterChoice){
+                case 0:
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+            }
         }
     }
 }
