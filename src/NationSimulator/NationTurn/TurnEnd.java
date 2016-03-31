@@ -11,6 +11,7 @@ public class TurnEnd extends UserInputs{
             nationPopulation = populationLimit;
         }
         nationStrength   = nationPopulation * individualStrength; 
+        nationWealthInc  = roadCount * roadTech; 
         nationWealth     = nationWealth + nationWealthInc; 
         turnCount        = turnCount + 1;
     }
