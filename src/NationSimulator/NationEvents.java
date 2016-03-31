@@ -4,8 +4,7 @@ import MessingAround.UserInputs;
 
 public class NationEvents extends UserInputs{
     public static void main(String[] args) {
-        dumbRandomizer = 99;
-        nationNumGen = NumGen.nextInt(dumbRandomizer); 
+        nationNumGen = (int) (Math.random() * 100); 
         if(nationNumGen <= 49) {
             nationEvent = "Nothing happened.";
             nationEventNum = 0;

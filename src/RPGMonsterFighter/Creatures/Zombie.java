@@ -13,8 +13,8 @@ public class Zombie extends RPG_Game{
             damageDone = damageDone * weaponClass;
             Zombie.setHealth(zombHp - damageDone);
         }else if (!attacking){
-            damageTaken = NumGen.nextInt(damageRandom);
-            damageTaken = damageTaken - plrDef;
+            //damageTaken = NumGen.nextInt(damageRandom);
+            //damageTaken = damageTaken - plrDef;
         }
     }
 }

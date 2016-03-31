@@ -57,17 +57,26 @@ public class UserInputs {
     public static int nationNumGen         = 0;
     public static int nationEventNum       = 0;
     public static int nationPopulation     = 100;
-    public static int nationWealth         = 1000;
-    public static int nationWealthInc      = 10;
+    public static int nationWealth         = 2000;
+    public static int nationWealthInc      = 100;
     public static int populationLimit      = 500;
+    public static int roadBuild            = 0;
+    public static int roadCost             = 50;
+    public static int roadCount            = 10;
+    public static int roadTech             = 10;
     public static int turnCount            = 0;
+    public static int weaponBuild          = 0;
+    public static int weaponCost           = 10;
+    public static int weaponCount          = 100;
     public static double individualStrength = 0.1;
-    public static double nationGrowthRate   = 1.1;
-    public static double nationStrength = 10;
+    public static double nationGrowthRate   = 1.05;
+    public static double nationStrength     = 10;
+    public static double weaponTech         = 0.001;
     public static boolean turnActive = true;
     public static boolean turnSubActive = true;
     public static String nationName  = "Default";
     public static String nationEvent = "Default";
+    public static String userAction  = "Default";
     //                                                                          ------------------------------------------
     //                                                                           Ben's Game Stuff (Hopefully)
     
