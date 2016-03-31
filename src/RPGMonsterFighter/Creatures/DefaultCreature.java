@@ -20,11 +20,13 @@ public class DefaultCreature {
     public void setDefense(int newDefenseVal){
         defense = newDefenseVal;
     }
-    public void takeDamage(int lostHealth){
+    public void loseHealth(int lostHealth){
         health = health - lostHealth;
     }
-    public void useMana(int lostMana){
+    public void loseMana(int lostMana){
         mana = mana - lostMana;
     }
-    public void 
+    public void loseDef(int lostDef){
+        defense = defense - lostDef;
+    }
 }
