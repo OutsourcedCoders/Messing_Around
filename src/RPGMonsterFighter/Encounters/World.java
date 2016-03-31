@@ -55,12 +55,31 @@ public class World extends UserInputs{
             System.out.print("His untimely demise was caused by ");
             switch(monsterChoice){
                 case 0:
+                    System.out.println("a deadly ZOMBIE.");
                     break;
                 case 1:
+                    System.out.println("a poisonous SPIDER.");
                     break;
                 case 2:
+                    System.out.println("a sticky SLIME MONSTER.");
                     break;
                 case 3:
+                    System.out.println("an old MAGE.");
+                    break;
+                case 4:
+                    System.out.println("");
+                    break;
+                case 5:
+                    System.out.println("");
+                    break;
+                case 6:
+                    System.out.println("");
+                    break;
+                case 7:
+                    System.out.println("");
+                    break;
+                default:
+                    System.out.println("a glitch :P");
                     break;
             }
         }

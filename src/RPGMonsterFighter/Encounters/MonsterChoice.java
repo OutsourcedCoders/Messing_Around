@@ -22,7 +22,7 @@ public class MonsterChoice extends World{
             case 3:
                 monsterChoice = 3;
                 System.out.println("Oh dear god!");
-                System.out.println("Static crackles around you.");
+                System.out.println("SPARKS crackle around you.");
                 break;
             case 4:
                 monsterChoice = 4;
