@@ -19,17 +19,23 @@ public class UserInputs {
     public static boolean userAnswered = false;
     //                                                                           ----------------------------------------
     //                                                                           Jorge's 
-    public static int landRandom = 10;
-    public static int healthRandom = 5;
-    public static int damageRandom = 5;
-    public static int lootRandom = 0;
+    public static int weaponClass    = 1;
+    public static int monsterChoice  = 8;
+    public static int landRandom     = 10;
+    public static int healthRandom   = 5;
+    public static int damageRandom   = 5;
+    public static int lootRandom     = 0;
     public static int creatureRandom = 8;
-    public static int windRandom = 5;
-    public static int lootRandomVal = 5;
+    public static int windRandom     = 5;
+    public static int lootRandomVal  = 5;
+    public static int dePlrHp   = 100;
+    public static int dePlrDef  = 0;
+    public static int dePlrMana = 0;
     public static boolean creatureHere = false;
-    public static boolean gotHit = false;
-    public static boolean inBattle = false;
-    public static boolean alive = true;
+    public static boolean gotHit       = false;
+    public static boolean inBattle     = false;
+    public static boolean alive        = true;
+    public static boolean attacking    = false;
     //public DefaultPlains Plains = new DefaultPlains(); 
     
     //                                                                           ----------------------------------------
