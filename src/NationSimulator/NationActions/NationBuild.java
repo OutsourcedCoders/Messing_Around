@@ -4,14 +4,18 @@ import MessingAround.UserInputs;
 
 public class NationBuild extends UserInputs{
     public static void main(String[] args) {
-        while(turnSubActive) {
-            System.out.println("---------------------------------------------------------------------------------");
-            System.out.println("|  Build more homes  |  Build more trade roads  |  Build more weapons  |  Exit  |");
-            System.out.println("---------------------------------------------------------------------------------");
-            userInput = sc.nextLine();
+        while(turnSubActive) {            
             userAnswered = false;
+            System.out.println(nationName);
+            System.out.println("-------------------------------------------------------------------------------------------------------------------");
+            System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
+            System.out.println("   Build more homes   |  Build more trade roads  |");
+            System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
+            System.out.println("  Build more weapons  |           Exit           |");
+            System.out.println("-------------------------------------------------------------------------------------------------------------------");
             while(!userAnswered) {
-                switch(userInput.toUpperCase()) {
+                userAction = sc.nextLine();
+                switch(userAction.toUpperCase()) {
                     case "BUILD MORE HOMES": 
                         System.out.println("Each house increases population limit by " + houseTech 
                                 + " at a cost of " + houseCost + " gold");
@@ -20,21 +24,73 @@ public class NationBuild extends UserInputs{
                         if(houseBuild * houseCost <= nationWealth) {
                             houseCount = houseCount + houseBuild;
                             nationWealth = nationWealth - houseBuild * houseCost;
-                            userAnswered = true;
+                            System.out.println("Houses are slated to be built");
+                            System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                            System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
+                            System.out.println("   Build more homes   |  Build more trade roads  |");
+                            System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
+                            System.out.println("  Build more weapons  |           Exit           |");
+                            System.out.println("-------------------------------------------------------------------------------------------------------------------");
                         }
                         else{
                             System.out.println("Insufficient Gold");
                         }
                         break;
                     case "BUILD MORE TRADE ROADS":
-                        System.out.println("Each road increases national wealth gain by " + roadTech
-                                + " per turn at a cost of " + roadCost + " gold");
+                        System.out.println("Each road increases national wealth gain by " + roadTech + " per turn at a cost of " + roadCost + " gold");
                         System.out.print("Input number of roads to be built: ");
                         roadBuild = sc.nextInt();
                         if(roadBuild * roadCost <= nationWealth) {
                             roadCount = roadCount + roadBuild;
                             nationWealth = nationWealth - roadBuild * roadCost;
+                            System.out.println("Roads are slated to be built");
+                            System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                            System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
+                            System.out.println("   Build more homes   |  Build more trade roads  |");
+                            System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
+                            System.out.println("  Build more weapons  |           Exit           |");
+                            System.out.println("-------------------------------------------------------------------------------------------------------------------");
                         }
+                        else {
+                            System.out.println("Insufficient Gold");
+                        }
+                        break;
+                    case "BUILD MORE WEAPONS":
+                        System.out.println("Each weapon increases individual strength by " + weaponTech + " and costs " + weaponCost  + " gold.");
+                        System.out.print("Input number of weapons to be built: ");
+                        weaponBuild = sc.nextInt();
+                        if(weaponBuild * weaponCost <= nationWealth) {
+                            weaponCount = weaponCount + weaponBuild;
+                            nationWealth = nationWealth - weaponBuild * weaponCost;
+                            individualStrength = weaponCount * weaponTech;
+                            nationStrength     = nationPopulation * individualStrength; 
+                            System.out.println("Weapons are slated to be built");
+                            System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                            System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
+                            System.out.println("   Build more homes   |  Build more trade roads  |");
+                            System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
+                            System.out.println("  Build more weapons  |           Exit           |");
+                            System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                        }
+                        else {
+                            System.out.println("Insufficient Gold");
+                        }
+                        break;
+                    case "HELP":
+                        System.out.println(nationName);
+                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                        System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
+                        System.out.println("   Build more homes   |  Build more trade roads  |");
+                        System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
+                        System.out.println("  Build more weapons  |           Exit           |");
+                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                        break;
+                    case "EXIT":
+                        userAnswered = true;
+                        turnSubActive = false;
+                        break;
+                    default:
+                        break;
                 }
             }
         }

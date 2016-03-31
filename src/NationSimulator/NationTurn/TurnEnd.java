@@ -10,9 +10,11 @@ public class TurnEnd extends UserInputs{
         if (nationPopulation > populationLimit) {
             nationPopulation = populationLimit;
         }
-        nationStrength   = nationPopulation * individualStrength; 
-        nationWealthInc  = roadCount * roadTech; 
-        nationWealth     = nationWealth + nationWealthInc; 
-        turnCount        = turnCount + 1;
+        individualStrength = weaponCount * weaponTech;
+        nationStrength     = nationPopulation * individualStrength; 
+        nationWealthInc    = roadCount * roadTech; 
+        nationWealth       = nationWealth + nationWealthInc; 
+        turnCount          = turnCount + 1;
+        NationSimulator.NationTurn.TurnIntro.main(args);
     }
 }
