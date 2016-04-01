@@ -21,7 +21,7 @@ public class NationBuild extends UserInputs{
                                 + " at a cost of " + houseCost + " gold");
                         System.out.print("Input number of homes to be built: ");
                         houseBuild = sc.nextInt();
-                        if(houseBuild * houseCost <= nationWealth) {
+                        if((houseBuild * houseCost + 1000) <= nationWealth) {
                             houseCount = houseCount + houseBuild;
                             nationWealth = nationWealth - houseBuild * houseCost;
                             System.out.println("Houses are slated to be built");
@@ -40,7 +40,7 @@ public class NationBuild extends UserInputs{
                         System.out.println("Each road increases national wealth gain by " + roadTech + " per turn at a cost of " + roadCost + " gold");
                         System.out.print("Input number of roads to be built: ");
                         roadBuild = sc.nextInt();
-                        if(roadBuild * roadCost <= nationWealth) {
+                        if((roadBuild * roadCost + 1000) <= nationWealth) {
                             roadCount = roadCount + roadBuild;
                             nationWealth = nationWealth - roadBuild * roadCost;
                             System.out.println("Roads are slated to be built");
@@ -59,7 +59,7 @@ public class NationBuild extends UserInputs{
                         System.out.println("Each weapon increases individual strength by " + weaponTech + " and costs " + weaponCost  + " gold.");
                         System.out.print("Input number of weapons to be built: ");
                         weaponBuild = sc.nextInt();
-                        if(weaponBuild * weaponCost <= nationWealth) {
+                        if((weaponBuild * weaponCost + 1000) <= nationWealth) {
                             weaponCount = weaponCount + weaponBuild;
                             nationWealth = nationWealth - weaponBuild * weaponCost;
                             individualStrength = weaponCount * weaponTech;
