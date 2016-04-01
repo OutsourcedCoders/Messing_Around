@@ -6,11 +6,12 @@ public class TurnEnd extends UserInputs{
     public static void main(String args[]) {
         NationSimulator.NationEvents.main(args);
         populationLimit = houseTech * houseCount;
+        nationGrowthRate = houseTech / houseCount;
         nationPopulation = (int) (nationPopulation * (nationGrowthRate)); 
         if (nationPopulation > populationLimit) {
             nationPopulation = populationLimit;
         }
-        else if(nationPopulation == 0) {
+        if(nationPopulation == 0) {
             gameOn = false;
         }
         individualStrength = weaponCount * weaponTech;

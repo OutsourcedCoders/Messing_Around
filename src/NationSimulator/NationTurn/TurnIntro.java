@@ -10,13 +10,14 @@ public class TurnIntro extends UserInputs{
         }
         System.out.println("\n|" + nationName + "|");
         System.out.println("---------------------------------------------------"
-                + "----------------------------------");
+                + "-------------------------------------");
         System.out.println("|    Nation Wealth    |  Nation Population  |  Nation"
-            + " Strength  |  Event  |  Build  |");
+            + " Strength  |  Event  |    Build   |");
         System.out.println("|    " + nationWealth + "\t      |  " + nationPopulation +
-            "\t\t    |  " + nationStrength + "\t\t|  " + nationEventNum + "      |");
+            "\t\t    |  " + nationStrength + "\t\t|  " + nationEventNum + "      |"
+                + "  End Turn  |");
         System.out.println("---------------------------------------------------"
-                + "----------------------------------");
+                + "-------------------------------------");
         System.out.println(nationEvent);
         NationSimulator.NationTurn.TurnMain.main(args);
     }
