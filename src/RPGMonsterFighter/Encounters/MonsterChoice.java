@@ -14,6 +14,7 @@ public class MonsterChoice extends World{
                 monsterChoice = 1;
                 System.out.println("This is bad!");
                 System.out.println("Your feet get entangled in sticky WEBS.");
+                RPGMonsterFighter.Creatures.Spider.main(args);
                 break;
             case 2:
                 monsterChoice = 2;
@@ -32,13 +33,18 @@ public class MonsterChoice extends World{
                 break;
             case 5:
                 monsterChoice = 5;
-                System.out.println("");
+                System.out.println("What is that?");
+                System.out.println("The ground TREMBLES around you.");
                 break;
             case 6:
                 monsterChoice = 6;
+                System.out.println("DRAGONS!");
+                System.out.println("You think you don't have to say anything.");
                 break;
             case 7:
                 monsterChoice = 7;
+                System.out.println("What's that?");
+                System.out.println("The smell of ALE hits you.");
                 break;
             default:
                 monsterChoice = 8;

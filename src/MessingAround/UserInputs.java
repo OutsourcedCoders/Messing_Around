@@ -19,6 +19,7 @@ public class UserInputs {
     public static boolean userAnswered = false;
     //                                                                           ----------------------------------------
     //                                                                           Jorge's 
+    public static int monsterDef     = 10;
     public static int weaponClass    = 1;
     public static int monsterChoice  = 8;
     public static int landRandom     = 10;

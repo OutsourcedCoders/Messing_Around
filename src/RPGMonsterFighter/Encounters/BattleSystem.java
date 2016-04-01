@@ -37,6 +37,16 @@ public class BattleSystem extends MonsterChoice{
                 case "ITEM":
                     break;
                 case "RUN":
+                    if(monsterChoice == 6){
+                        System.out.println("You can't outrun the flames.");
+                        
+                    }
+                    if(NumGen.nextInt(100) <= 60){
+                        
+                    }
+                    System.out.println("BOOK IT MAN!");
+                    inBattle = false;
+                    RPGMonsterFighter.Encounters.World.main(args);
                     break;
             }
         }

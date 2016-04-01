@@ -39,6 +39,7 @@ public class ActSystem extends MessingAroundMain{
                         userAnswered = false;
                         RPGMonsterFighter.Encounters.ItemSearch.main(args);
                     }
+                    System.out.println("You find nothing here.");
                     break;
                 default:
                     System.out.println("Please input a valid response.");
