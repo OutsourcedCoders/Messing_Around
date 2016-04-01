@@ -12,7 +12,7 @@ public class Zombie extends RPG_Game{
         if (attacking){
             int damageDone = NumGen.nextInt(damageRandom);
             damageDone = damageDone * weaponClass;
-            Zombie.loseHealth(damageDone);
+            //Zombie.loseHealth(damageDone);
             System.out.println("You did " + damageDone + " damage.");
         }else if (!attacking){
             int damageTaken = NumGen.nextInt(damageRandom);
