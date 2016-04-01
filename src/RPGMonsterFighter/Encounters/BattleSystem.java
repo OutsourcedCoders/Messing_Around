@@ -35,19 +35,32 @@ public class BattleSystem extends MonsterChoice{
                     }
                     break;
                 case "ITEM":
+                    System.out.println("I haven't finished this yet D: ");//     TODO: actually make items.
                     break;
                 case "RUN":
-                    if(monsterChoice == 6){
-                        System.out.println("You can't outrun the flames.");
-                        
+                    switch(monsterChoice){
+                        case 0:
+                            break;
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            break;
+                        case 6:
+                            System.out.println("You can't outrun the flames.");//Dragon encounter
+                            break;
+                        case 7:
+                            break;
+                        default:
+                            System.out.print("HOW THE F*** DID YOU BREAK ");
+                            System.out.println("IT THIS TIME?!?!?");
+                            break;
                     }
-                    if(NumGen.nextInt(100) <= 60){
-                        
-                    }
-                    System.out.println("BOOK IT MAN!");
-                    inBattle = false;
-                    RPGMonsterFighter.Encounters.World.main(args);
-                    break;
             }
         }
     }
