@@ -6,7 +6,7 @@ import RPGMonsterFighter.Creatures.DefaultCreature;
 //                                                                               Note: This is just the launcher.
 
 public class RPG_Game extends MessingAroundMain{
-    
+    public static DefaultCreature Player = new DefaultCreature(plrHp, plrMana, plrDef);
     public static void main(String[] args) {
         System.out.println("Hello, and welcome to Jasonface900's RPG Fighter");
         System.out.print("Ready to start the game? :");
@@ -26,10 +26,9 @@ public class RPG_Game extends MessingAroundMain{
                     break;
             }
         }
-        int plrHp   = dePlrHp;
-        int plrMana = dePlrMana;
-        int plrDef  = dePlrMana;
-        DefaultCreature Player = new DefaultCreature(plrHp, plrMana, plrDef);
+        Player.setHealth(100);
+        Player.setMana(0);
+        Player.setDefense(0);
         RPGMonsterFighter.Encounters.World.main(args);//                         Starts game
     }
 }

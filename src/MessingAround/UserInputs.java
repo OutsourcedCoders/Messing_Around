@@ -29,14 +29,15 @@ public class UserInputs {
     public static int creatureRandom = 8;
     public static int windRandom     = 5;
     public static int lootRandomVal  = 5;
-    public static int dePlrHp   = 100;
-    public static int dePlrDef  = 0;
-    public static int dePlrMana = 0;
+    public static int plrHp   = 100;
+    public static int plrDef  = 0;
+    public static int plrMana = 0;
     public static boolean creatureHere = false;
     public static boolean gotHit       = false;
     public static boolean inBattle     = false;
     public static boolean alive        = true;
     public static boolean attacking    = false;
+    public static boolean justEncountered = false;
     //public DefaultPlains Plains = new DefaultPlains(); 
     
     //                                                                           ----------------------------------------
