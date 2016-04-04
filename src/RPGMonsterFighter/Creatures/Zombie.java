@@ -1,4 +1,3 @@
-
 package RPGMonsterFighter.Creatures;
 import RPGMonsterFighter.RPG_Game;
 

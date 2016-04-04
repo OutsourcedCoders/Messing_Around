@@ -1,5 +1,6 @@
 package RPGMonsterFighter.Creatures;
 import RPGMonsterFighter.RPG_Game;
+
 public class Slime extends RPG_Game{
     public static DefaultCreature Slime = new DefaultCreature(15, 0, 1);
     public static void main(String[] args) {
@@ -13,7 +14,13 @@ public class Slime extends RPG_Game{
             damageDone = damageDone * weaponClass;//                             Currently unused
             damageDone = damageDone + 1;//                                       Adds 1 to damage done to do at least 1 damage
             Slime.loseHealth(damageDone);//                                      Script for doing damage
+            if(Slime.defense != 0 && NumGen.nextInt(10) <= 6){
+                Slime.loseDef(1);
+                System.out.println("Slime lost his only defense!");
+                System.out.println("Nice!");
+            }
             System.out.println("You did " + damageDone + " damage.");//          Tells people how much damage they did
+            attacking = false;
         }else if (!attacking && !justEncountered){
             int damageTaken = NumGen.nextInt(damageRandom);
             damageTaken = damageTaken - plrDef;

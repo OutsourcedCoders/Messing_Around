@@ -41,6 +41,8 @@ public class BattleSystem extends MonsterChoice{
                 case "RUN":
                     switch(monsterChoice){
                         case 0:
+                            System.out.println("Obviously, you're too fast.");
+                            System.out.println("You outrun the ZOMBIE.");
                             break;
                         case 1:
                             break;
