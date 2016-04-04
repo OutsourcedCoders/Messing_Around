@@ -78,13 +78,14 @@ public class UserInputs {
     public static double eventStrengthEffect   = 0;
     public static double individualStrength    = 0.1;
     public static double nationGrowthRate      = 1.05;
-    public static double nationStrength        = 10;
     public static double weaponTech            = 0.001;
+    public static float nationStrength        = 10;
     public static boolean turnActive = true;
     public static boolean turnSubActive = true;
     public static String nationName  = "Default";
     public static String nationEvent = "Default";
-    public static String userAction  = "Default";
+    public static String userAction     = "Default";
+    public static String userSubAction  = "Default";
     //                                                                          ------------------------------------------
     //                                                                           Ben's Game Stuff (Hopefully)
     

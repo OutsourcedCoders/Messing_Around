@@ -8,8 +8,8 @@ public class TurnMain extends UserInputs{
         if(nationEventNum != 3) {//                                              Non-war Scenario         
             while(turnActive) {
                 System.out.println("What would you do?");
-                userInput = sc.nextLine();
-                switch(userInput.toUpperCase()) {
+                userAction = sc.nextLine();
+                switch(userAction.toUpperCase()) {
                     case "BUILD":
                         NationSimulator.NationActions.NationBuild.main(args);
                         break;
@@ -19,7 +19,8 @@ public class TurnMain extends UserInputs{
                         break;
                 }
             }
-        }else {
+        }
+        else {
             System.out.println(nationName + " is at war.");//                    War Scenario
         }
         NationSimulator.NationTurn.TurnEnd.main(args);

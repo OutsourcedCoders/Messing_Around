@@ -19,18 +19,12 @@ public class TurnIntro extends UserInputs{
         }
         System.out.print("\n|" + nationName + "|");
         System.out.println("  Turn " + turnCount + "  |");
-        System.out.println("---------------------------------------------------"
-                + "-------------------------------------");
-        System.out.println("|    Nation Wealth    |  Nation Population  |  Nation"
-            + " Strength  |  Event  |    Build   |");
-        System.out.println("|    " + nationWealth + "\t      |  " + nationPopulation +
-            "\t\t    |  " + nationStrength + "\t\t|  " + nationEventNum + "      |"
-                + "  End Turn  |");
-        System.out.println("---------------------------------------------------"
-                + "-------------------------------------");
+        userAction = "Default";
+        NationSimulator.NationInfo.main(args);
         System.out.println(nationEvent);
         if(gameOn) {
-            NationSimulator.NationTurn.TurnIntro.main(args);
+            NationSimulator.NationTurn.TurnMain.main(args);
         }
+        else{}
     }
 }
