@@ -41,9 +41,9 @@ public class Levels extends Data{
             if(PlayerFirst){
                 switch(LastMove){
                     case 1:
-                        ;
                         break;
                     case 2:
+                        break;
                 }
             }
             else{
