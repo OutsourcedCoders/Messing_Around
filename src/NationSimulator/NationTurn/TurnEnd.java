@@ -6,7 +6,7 @@ public class TurnEnd extends UserInputs{
     public static void main(String args[]) {
         NationSimulator.NationEvents.main(args);
         populationLimit = houseTech * houseCount;
-        nationGrowthRate = 1+ (houseTech/houseCount) + eventPopulationEffect;
+        nationGrowthRate = 1 + (houseTech/houseCount) + eventPopulationEffect;
         System.out.println(nationGrowthRate);
         nationPopulation = (int) (nationPopulation * (nationGrowthRate)); 
         if (nationPopulation > populationLimit) {

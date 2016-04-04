@@ -37,7 +37,7 @@ public class MessingAroundMain extends UserInputs{
             case "DEVELOPER":
                 System.out.println("So, you're a dev.");
                 System.out.println("You get some cool choices then!");
-                
+                break;
             default: 
                 System.out.println("Please input a valid response");
                 break;
