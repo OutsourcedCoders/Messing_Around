@@ -17,6 +17,7 @@ public class UserInputs {
     public static String userInput = "User";
     public static String userGame  = "None Selected";
     public static boolean userAnswered = false;
+    public static boolean isDeveloper  = false;
     //                                                                           ----------------------------------------
     //                                                                           Jorge's 
     public static int monsterDef     = 10;
@@ -32,6 +33,7 @@ public class UserInputs {
     public static int plrHp   = 100;
     public static int plrDef  = 0;
     public static int plrMana = 0;
+    public static boolean hasActed     = false;
     public static boolean creatureHere = false;
     public static boolean gotHit       = false;
     public static boolean inBattle     = false;
