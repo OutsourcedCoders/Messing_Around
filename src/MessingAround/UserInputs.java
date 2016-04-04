@@ -82,7 +82,8 @@ public class UserInputs {
     public static boolean turnSubActive = true;
     public static String nationName  = "Default";
     public static String nationEvent = "Default";
-    public static String userAction  = "Default";
+    public static String userAction     = "Default";
+    public static String userSubAction  = "Default";
     //                                                                          ------------------------------------------
     //                                                                           Ben's Game Stuff (Hopefully)
     
