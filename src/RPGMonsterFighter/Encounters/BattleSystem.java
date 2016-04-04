@@ -15,6 +15,7 @@ public class BattleSystem extends MonsterChoice{
                             RPGMonsterFighter.Creatures.Zombie.main(args);
                             break;
                         case 1:
+                            RPGMonsterFighter.Creatures.Spider.main(args);
                             break;
                         case 2:
                             break;
