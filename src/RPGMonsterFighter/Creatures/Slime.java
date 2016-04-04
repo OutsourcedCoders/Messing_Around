@@ -1,20 +1,18 @@
-
 package RPGMonsterFighter.Creatures;
 import RPGMonsterFighter.RPG_Game;
-
-public class Zombie extends RPG_Game{
-    public static DefaultCreature Zombie = new DefaultCreature(50, 0, 0);
+public class Slime extends RPG_Game{
+    public static DefaultCreature Slime = new DefaultCreature(15, 0, 1);
     public static void main(String[] args) {
         if (justEncountered){
             System.out.println("\nYou see a horrifying ZOMBIE.");
-            Zombie.setHealth(50 + NumGen.nextInt(25));//                        Default health
+            Slime.setHealth(15 + NumGen.nextInt(10));//                          Default health
             justEncountered = false;
         }
         if (attacking){
             int damageDone = NumGen.nextInt(damageRandom);//                     Randomizes damage from a val of 0-5
             damageDone = damageDone * weaponClass;//                             Currently unused
             damageDone = damageDone + 1;//                                       Adds 1 to damage done to do at least 1 damage
-            Zombie.loseHealth(damageDone);//                                     Script for doing damage
+            Slime.loseHealth(damageDone);//                                      Script for doing damage
             System.out.println("You did " + damageDone + " damage.");//          Tells people how much damage they did
         }else if (!attacking && !justEncountered){
             int damageTaken = NumGen.nextInt(damageRandom);

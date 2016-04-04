@@ -7,6 +7,6 @@ public class NationMain extends UserInputs{
         System.out.println("Welcome to Nation Simulator.");
         System.out.print("What would you like to call your nation?");
         nationName = sc.nextLine();
-        NationSimulator.TurnIntro.main(args);
+        NationSimulator.NationTurn.TurnIntro.main(args);
     }
 }

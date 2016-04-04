@@ -43,7 +43,7 @@ public class Levels extends Data{
                     case 1:
                         ;
                         break;
-                    case 1:
+                    case 2:
                 }
             }
             else{

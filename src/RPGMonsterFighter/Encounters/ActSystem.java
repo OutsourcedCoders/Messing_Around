@@ -30,14 +30,16 @@ public class ActSystem extends MessingAroundMain{
                     }
                     break;
                 case "SEARCH":
-                    
                     if(creatureHere = true){
                         inBattle = true;
-                        RPGMonsterFighter.Encounters.World.main(args);
+                        userAnswered = false;
+                        RPGMonsterFighter.Encounters.MonsterChoice.main(args);
                     }//                                                          stuff
                     if(lootRandom >= 3){
+                        userAnswered = false;
                         RPGMonsterFighter.Encounters.ItemSearch.main(args);
                     }
+                    System.out.println("You find nothing here.");
                     break;
                 default:
                     System.out.println("Please input a valid response.");
