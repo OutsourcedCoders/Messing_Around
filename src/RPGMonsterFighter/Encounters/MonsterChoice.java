@@ -34,6 +34,7 @@ public class MonsterChoice extends World{
                     case "GLITCH":
                         monsterChoice = 8;
                         break;
+                }
             }
         }
         switch(creatureRandomVal){
