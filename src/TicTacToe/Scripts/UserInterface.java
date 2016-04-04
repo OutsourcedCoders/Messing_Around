@@ -1,5 +1,5 @@
 
-package TicTacToe;
+package TicTacToe.Scripts;
 
 /**
  *
@@ -14,13 +14,17 @@ package TicTacToe;
  * --+---+--
  * X | O | X
 */
-public class UserInterface extends Data {
-    public static void Display() {
+public class UserInterface extends Levels{
+    
+    public static boolean CheckForWin(){
+        return false;
+    }
+    public static void Display(){
         System.out.println("");
         for(int i = 0; i<9 ;i++){
             switch(Game[i]){
                 case 0:
-                    System.out.print("   ");
+                    System.out.print(" " + i + " ");
                     break;
                 case 1:
                     System.out.print(" X ");
