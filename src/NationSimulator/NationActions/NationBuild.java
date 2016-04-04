@@ -23,24 +23,29 @@ public class NationBuild extends UserInputs{
                         houseBuild = sc.nextInt();
                         if(houseBuild * houseCost <= nationWealth + 1000) {
                             if(houseBuild * houseCost >= nationWealth){
-                                System.out.println("You will be in debt if you build this");
+                                System.out.println("You will be in debt if you build this. Are you sure?");
                                 System.out.println("----------------");
                                 System.out.println("|  YES  |  NO  |");
                                 System.out.println("----------------");
                                 userInput = sc.nextLine();
-                                if(userInput.toUpperCase() == "YES") {
-                                    houseCount = houseCount + houseBuild;
-                                    nationWealth = nationWealth - houseBuild * houseCost;
-                                    System.out.println("Houses are slated to be built");
-                                    System.out.println("-------------------------------------------------------------------------------------------------------------------");
-                                    System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
-                                    System.out.println("   Build more homes   |  Build more trade roads  |");
-                                    System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
-                                    System.out.println("  Build more weapons  |           Exit           |");
-                                    System.out.println("-------------------------------------------------------------------------------------------------------------------");
-                                }
-                                else if(userInput.toUpperCase() == "NO") {
-                                    System.out.println("Build has been cancelled");
+                                userInput = sc.nextLine();
+                                switch(userInput.toUpperCase()){
+                                    case "YES":  
+                                        houseCount = houseCount + houseBuild;
+                                        nationWealth = nationWealth - houseBuild * houseCost;
+                                        System.out.println("Houses are slated to be built");
+                                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                                        System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
+                                        System.out.println("   Build more homes   |  Build more trade roads  |");
+                                        System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
+                                        System.out.println("  Build more weapons  |           Exit           |");
+                                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                                        break;
+                                    case "NO":
+                                        System.out.println("Build has been cancelled");
+                                        break;
+                                    default:
+                                        System.out.println("Something is broken");
                                 }
                             }
                             else{
@@ -125,7 +130,6 @@ public class NationBuild extends UserInputs{
                                     System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
                                     System.out.println("  Build more weapons  |           Exit           |");
                                     System.out.println("-------------------------------------------------------------------------------------------------------------------");
-
                                 }
                                 else if(userInput.toUpperCase() == "NO") {
                                     System.out.println("Build has been cancelled");
