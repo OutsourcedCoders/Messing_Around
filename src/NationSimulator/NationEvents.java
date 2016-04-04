@@ -7,37 +7,40 @@ public class NationEvents extends UserInputs{
         nationNumGen = (int) (Math.random() * 100); 
         if(nationNumGen <= 49) {
             nationEvent = "Nothing happened.";
+            eventWealthEffect = 0;
+            eventPopulationEffect = 0;
+            eventStrengthEffect = 0;
             nationEventNum = 0;
         }
         else if(nationNumGen <= 50) {
             nationEvent = "A tornado wrecked havoc.";
             nationEventNum = 1;
             eventWealthEffect = -(nationWealth * .5);
-            eventPopulationEffect = .6;
+            eventPopulationEffect = -.4;
             eventStrengthEffect = .8;
         }
         else if(nationNumGen <= 55) {
             nationEvent = "A neighbouring country brings gifts of gold.";
             nationEventNum = 2;
             eventWealthEffect = nationWealth *.25;
-            eventPopulationEffect = 1.2;
+            eventPopulationEffect = .2;
         }
         else if(nationNumGen <= 70) {
             nationEvent = "A neighbouring nation has declared war.";
             nationEventNum = 3;
-            eventStrengthEffect = 1.2;
+            eventStrengthEffect = .2;
         }
         else if(nationNumGen <= 75) {
             nationEvent = "The economy is booming.";
             nationEventNum = 4;
             eventWealthEffect = nationWealth * .25;
-            eventPopulationEffect = 1.2;
+            eventPopulationEffect = .2;
         }
         else if(nationNumGen <= 85) {
             nationEvent = "A fire spreads destruction around the capital.";
             nationEventNum = 5;
             eventWealthEffect = -(nationWealth * .15);
-            eventPopulationEffect = nationGrowthRate * .8;
+            eventPopulationEffect = -.2;
             eventStrengthEffect = .8;
         }
         else if(nationNumGen <= 90) {
@@ -51,7 +54,7 @@ public class NationEvents extends UserInputs{
             nationEvent = "A plague has developed.";
             nationEventNum = 7;
             eventWealthEffect = -(nationWealth * .3);
-            eventPopulationEffect = .5;
+            eventPopulationEffect = -.5;
             eventStrengthEffect = .5;
         }
         else {

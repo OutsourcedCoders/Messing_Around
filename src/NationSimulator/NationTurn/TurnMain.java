@@ -19,7 +19,8 @@ public class TurnMain extends UserInputs{
                         break;
                 }
             }
-        }else {
+        }
+        else {
             System.out.println(nationName + " is at war.");//                    War Scenario
         }
         NationSimulator.NationTurn.TurnEnd.main(args);

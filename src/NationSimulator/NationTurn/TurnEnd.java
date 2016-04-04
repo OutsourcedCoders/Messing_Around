@@ -6,7 +6,8 @@ public class TurnEnd extends UserInputs{
     public static void main(String args[]) {
         NationSimulator.NationEvents.main(args);
         populationLimit = houseTech * houseCount;
-        nationGrowthRate = houseTech / houseCount + eventPopulationEffect;
+        nationGrowthRate = 1+ (houseTech/houseCount) + eventPopulationEffect;
+        System.out.println(nationGrowthRate);
         nationPopulation = (int) (nationPopulation * (nationGrowthRate)); 
         if (nationPopulation > populationLimit) {
             nationPopulation = populationLimit;
@@ -14,8 +15,8 @@ public class TurnEnd extends UserInputs{
         if(nationPopulation <= 0) {
             gameOn = false;
         }
-        individualStrength = weaponCount * weaponTech + eventStrengthEffect;
-        nationStrength     = nationPopulation * individualStrength;
+        individualStrength = weaponCount * weaponTech * eventStrengthEffect;
+        nationStrength     = (float) (nationPopulation * individualStrength);
         nationWealthInc    = (int) (roadCount * roadTech + eventWealthEffect);
         nationWealth       = nationWealth + nationWealthInc; 
         if(nationWealth < 0) {

@@ -130,7 +130,7 @@ public class NationBuild extends UserInputs{
                                         weaponCount = weaponCount + weaponBuild;
                                         nationWealth = nationWealth - weaponBuild * weaponCost;
                                         individualStrength = weaponCount * weaponTech;
-                                        nationStrength     = nationPopulation * individualStrength;                             
+                                        nationStrength     = (float) (nationPopulation * individualStrength);                             
                                         System.out.println("Weapons are slated to be built");
                                         System.out.println("-------------------------------------------------------------------------------------------------------------------");
                                         System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
@@ -151,7 +151,7 @@ public class NationBuild extends UserInputs{
                                 weaponCount = weaponCount + weaponBuild;
                                 nationWealth = nationWealth - weaponBuild * weaponCost;
                                 individualStrength = weaponCount * weaponTech;
-                                nationStrength     = nationPopulation * individualStrength; 
+                                nationStrength     = (float) (nationPopulation * individualStrength); 
                                 System.out.println("Weapons are slated to be built");
                                 System.out.println("-------------------------------------------------------------------------------------------------------------------");
                                 System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
