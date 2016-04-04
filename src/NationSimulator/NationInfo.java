@@ -37,7 +37,7 @@ public class NationInfo extends UserInputs{
                     System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
                     System.out.println("   Build   |  End Turn  |");
                     System.out.print("|    " + nationWealth + "\t\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
-                    System.out.println("           |        |");
+                    System.out.println("           |            |");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------");
                 }
         }
