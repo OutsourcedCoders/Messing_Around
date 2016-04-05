@@ -37,6 +37,8 @@ public class MessingAroundMain extends UserInputs{
             case "DEVELOPER":
                 System.out.println("So, you're a dev.");
                 System.out.println("You get some cool choices then!");
+                isDeveloper = true;
+                userAnswered = true;
                 break;
             default: 
                 System.out.println("Please input a valid response");
@@ -45,7 +47,15 @@ public class MessingAroundMain extends UserInputs{
         }
         userAnswered = false;//                                                  Game Selection
         while(!userAnswered) {
-            System.out.print("What kinda game would you like to play?\n:");
+            System.out.println("What kinda game would you like to play?");
+            if(isDeveloper){
+                System.out.println("Choices: ");
+                System.out.println("Rock Paper Scissors");
+                System.out.println("Nation Simulator");
+                System.out.println("RPG");
+                System.out.println("Tic Tac Toe");
+            }
+            System.out.print(": ");
             userInput = sc.nextLine();
             switch (userInput.toUpperCase()) {
                 case "NATION SIMULATOR":
@@ -61,7 +71,7 @@ public class MessingAroundMain extends UserInputs{
                     break;
                 case "RPG":
                     System.out.println("\nHell yeah!");
-                    userAnswered = false;
+                    userAnswered = true;
                     RPGMonsterFighter.RPG_Game.main(args);
                 case "TIC TAC TOE":
                     System.out.println("Never hate the classics");

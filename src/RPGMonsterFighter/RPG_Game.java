@@ -8,6 +8,7 @@ import RPGMonsterFighter.Creatures.DefaultCreature;
 public class RPG_Game extends MessingAroundMain{
     public static DefaultCreature Player = new DefaultCreature(plrHp, plrMana, plrDef);
     public static void main(String[] args) {
+        userAnswered = false;
         System.out.println("Hello, and welcome to Jasonface900's RPG Fighter");
         System.out.print("Ready to start the game? :");
         while (!userAnswered){

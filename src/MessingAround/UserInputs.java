@@ -30,10 +30,12 @@ public class UserInputs {
     public static int creatureRandom = 8;
     public static int windRandom     = 5;
     public static int lootRandomVal  = 5;
+    public static int damageTaken = 0;
+    public static int damageDone  = 0;
     public static int plrHp   = 100;
     public static int plrDef  = 0;
     public static int plrMana = 0;
-    public static boolean hasActed     = false;
+    public static boolean hasChecked     = false;
     public static boolean creatureHere = false;
     public static boolean gotHit       = false;
     public static boolean inBattle     = false;
