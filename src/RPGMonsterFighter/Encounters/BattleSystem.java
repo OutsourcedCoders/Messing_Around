@@ -39,6 +39,7 @@ public class BattleSystem extends MonsterChoice{
                     System.out.println("I haven't finished this yet D: ");//     TODO: actually make items.
                     break;
                 case "ACT":
+                    userAnswered = false;
                     while(!userAnswered){
                         System.out.println("---------------");
                         System.out.println("| CHECK | SAY |");
@@ -49,32 +50,32 @@ public class BattleSystem extends MonsterChoice{
                             case "CHECK":
                                 switch(monsterChoice){
                                     case 0:
-                                        hasActed = true;
+                                        hasChecked = true;
                                         RPGMonsterFighter.Creatures.Zombie.main(args);
                                         break;
                                     case 1:
-                                        hasActed = true;
+                                        hasChecked = true;
                                         RPGMonsterFighter.Creatures.Spider.main(args);
                                         break;
                                     case 2:
-                                        hasActed = true;
+                                        hasChecked = true;
                                         RPGMonsterFighter.Creatures.Slime.main(args);
                                         break;
                                     case 3:
-                                        hasActed = true;
+                                        hasChecked = true;
                                         //RPGMonsterFighter.Creatures.
                                         break;
                                     case 4:
-                                        hasActed = true;
+                                        hasChecked = true;
                                         break;
                                     case 5:
-                                        hasActed = true;
+                                        hasChecked = true;
                                         break;
                                     case 6:
-                                        hasActed = true;
+                                        hasChecked = true;
                                         break;
                                     case 7:
-                                        hasActed = true;
+                                        hasChecked = true;
                                         break;
                                     default:
                                         System.out.println("GL1TC4 M0N2T3R:");

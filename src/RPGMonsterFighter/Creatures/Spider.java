@@ -6,11 +6,19 @@ public class Spider extends RPG_Game{
     public static void main(String[] args) {
         if (justEncountered){
             System.out.println("\nA terrifying GIANT SPIDER crawls towards you.");
-            Spider.setHealth(75 + NumGen.nextInt(25));//                        Default health
+            Spider.setHealth(75 + NumGen.nextInt(25));//                         Default health
+            Spider.setMana(0);
+            Spider.setDefense(5);
             justEncountered = false;
         }
+        if (hasChecked){
+            System.out.println("SPIDER attributes:");
+            System.out.println("HP   = " + Spider.health);
+            System.out.println("DEF  = " + Spider.defense);
+            System.out.println("MANA = " + Spider.mana);
+        }
         if (attacking){
-            int damageDone = NumGen.nextInt(damageRandom);//                     Randomizes damage from a val of 0-5
+            damageDone = NumGen.nextInt(damageRandom);//                         Randomizes damage from a val of 0-5
             damageDone = damageDone * weaponClass;//                             Currently unused
             damageDone = damageDone - Spider.defense;//                          Uses defense to change damage done
             damageDone = damageDone + 1;//                                       Adds 1 to damage done to do at least 1 damage
@@ -22,7 +30,7 @@ public class Spider extends RPG_Game{
             }
             System.out.println("You did " + damageDone + " damage.");//          Tells people how much damage they did
         }else if (!attacking && !justEncountered){
-            int damageTaken = NumGen.nextInt(damageRandom);
+            damageTaken = NumGen.nextInt(damageRandom);
             damageTaken = damageTaken - plrDef;
             damageTaken = damageTaken + 1;//                                     Adds 1 to damage taken to take at least 1 damage
             Player.loseHealth(damageTaken);//                                    Script for taking damage
