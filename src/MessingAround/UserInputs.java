@@ -7,6 +7,7 @@ package MessingAround;
 //                                                                               YourAverageRandy
 //                                                                               Sci1017
 //                                                                               ----------------------------------------
+import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -55,6 +56,10 @@ public class UserInputs {
     
     //                                                                           Nation Stuff
     public static int debtCount            = 0;
+    public static int enemyBribe           = 0;
+    public static int enemyPopulation      = 0;
+    public static int enemyWeapons         = 0;
+    public static int enemyWealth          = 0;
     public static int houseBuild           = 0;
     public static int houseCost            = 100;
     public static int houseCount           = 50;
@@ -69,23 +74,28 @@ public class UserInputs {
     public static int roadCost             = 50;
     public static int roadCount            = 10;
     public static int roadTech             = 10;
+    public static int sentToWar            = 0;
     public static int turnCount            = 0;
     public static int weaponBuild          = 0;
     public static int weaponCost           = 10;
     public static int weaponCount          = 100;
+    public static double enemyStrength         = 0;
     public static double eventWealthEffect     = 0;
     public static double eventPopulationEffect = 0;
     public static double eventStrengthEffect   = 0;
     public static double individualStrength    = 0.1;
-    public static double nationGrowthRate      = 1.05;
+    public static double nationGrowthRate      = 1;
     public static double weaponTech            = 0.001;
     public static float nationStrength        = 10;
-    public static boolean turnActive = true;
+    public static boolean turnActive    = true;
     public static boolean turnSubActive = true;
-    public static String nationName  = "Default";
-    public static String nationEvent = "Default";
+    public static boolean warOn         = false;
+    public static String nationName     = "Default";
+    public static String nationEvent    = "Default";
     public static String userAction     = "Default";
     public static String userSubAction  = "Default";
+    public static String wealthFormatS  = "##########";
+    public static DecimalFormat wealthFormat = new DecimalFormat(wealthFormatS);
     //                                                                          ------------------------------------------
     //                                                                           Ben's Game Stuff (Hopefully)
     

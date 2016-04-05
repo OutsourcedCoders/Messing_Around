@@ -20,7 +20,6 @@ public class TurnIntro extends UserInputs{
         System.out.print("\n|" + nationName + "|");
         System.out.println("  Turn " + turnCount + "  |");
         userAction = "Default";
-        NationSimulator.NationInfo.main(args);
         System.out.println(nationEvent);
         if(gameOn) {
             NationSimulator.NationTurn.TurnMain.main(args);
