@@ -17,6 +17,7 @@ public class Zombie extends RPG_Game{
             damageDone = damageDone + 1;//                                       Adds 1 to damage done to do at least 1 damage
             Zombie.loseHealth(damageDone);//                                     Script for doing damage
             System.out.println("You did " + damageDone + " damage.");//          Tells people how much damage they did
+            attacking = false;
         }else if (!attacking){
             damageTaken = NumGen.nextInt(damageRandom);
             damageTaken = damageTaken - plrDef;

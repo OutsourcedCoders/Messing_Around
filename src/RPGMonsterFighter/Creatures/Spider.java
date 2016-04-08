@@ -29,6 +29,7 @@ public class Spider extends RPG_Game{
                 System.out.println("YES!");
             }
             System.out.println("You did " + damageDone + " damage.");//          Tells people how much damage they did
+            attacking = false;
         }else if (!attacking && !justEncountered){
             damageTaken = NumGen.nextInt(damageRandom);
             damageTaken = damageTaken - plrDef;

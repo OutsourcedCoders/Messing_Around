@@ -68,7 +68,7 @@ public class MonsterChoice extends World{
                 System.out.println("Oh dang!");
                 System.out.println("You smell the sickly scent of SLIME.");
                 justEncountered = true;
-                //RPGMonsterFighter.Creatures.Slime.main(args);
+                RPGMonsterFighter.Creatures.Slime.main(args);
                 break;
             case 3:
                 monsterChoice = 3;
