@@ -18,6 +18,7 @@ public class Zombie extends RPG_Game{
             Zombie.loseHealth(damageDone);//                                     Script for doing damage
             System.out.println("You did " + damageDone + " damage.");//          Tells people how much damage they did
             attacking = false;
+            RPGMonsterFighter.Creatures.Zombie.main(args);
         }else if (!attacking){
             damageTaken = NumGen.nextInt(damageRandom);
             damageTaken = damageTaken - plrDef;

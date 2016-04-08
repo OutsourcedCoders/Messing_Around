@@ -30,6 +30,7 @@ public class Spider extends RPG_Game{
             }
             System.out.println("You did " + damageDone + " damage.");//          Tells people how much damage they did
             attacking = false;
+            RPGMonsterFighter.Creatures.Spider.main(args);
         }else if (!attacking && !justEncountered){
             damageTaken = NumGen.nextInt(damageRandom);
             damageTaken = damageTaken - plrDef;
