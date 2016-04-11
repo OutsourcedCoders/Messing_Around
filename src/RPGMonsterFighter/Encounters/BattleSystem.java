@@ -22,18 +22,24 @@ public class BattleSystem extends MonsterChoice{
                             RPGMonsterFighter.Creatures.Slime.main(args);
                             break;
                         case 3:
+                            //RPGMonsterFighter.Creatures.Wizard.main(args);
                             break;
                         case 4:
+                            //RPGMonsterFighter.Creatures.Archer.main(args);
                             break;
                         case 5:
+                            //RPGMonsterFighter.Creatures.Giant.main(args);
                             break;
                         case 6:
+                            //RPGMonsterFighter.Creatures.EffingDragon.main(args);
                             break;
                         case 7:
+                            //RPGMonsterFighter.Creatures.Dwarf.main(args);
                             break;
                         default:
                             System.out.println("Uh oh! You run across a");//     YOU BROKE IT
                             System.out.println("But nobody came.");//            WHY?!?!?!?!
+                            //RPGMonsterFighter.Creatures.Glitch.main(args);
                             break;
                     }
                     break;
@@ -65,19 +71,23 @@ public class BattleSystem extends MonsterChoice{
                                         break;
                                     case 3:
                                         hasChecked = true;
-                                        //RPGMonsterFighter.Creatures.
+                                        //RPGMonsterFighter.Creatures.Wizard.main(args);
                                         break;
                                     case 4:
                                         hasChecked = true;
+                                        //RPGMonsterFighter.Creatures.Archer.main(args);
                                         break;
                                     case 5:
                                         hasChecked = true;
+                                        //RPGMonsterFighter.Creatures.Giant.main(args);
                                         break;
                                     case 6:
                                         hasChecked = true;
+                                        //RPGMonsterFighter.Creatures.EffingDragon.main(args);
                                         break;
                                     case 7:
                                         hasChecked = true;
+                                        //RPGMonsterFighter.Creatures.Dwarf.main(args);
                                         break;
                                     default:
                                         System.out.println("GL1TC4 M0N2T3R:");
@@ -97,6 +107,7 @@ public class BattleSystem extends MonsterChoice{
                         case 0:
                             System.out.println("Obviously, you're too fast.");
                             System.out.println("You outrun the ZOMBIE.");
+                            inBattle = false;
                             break;
                         case 1:
                             break;

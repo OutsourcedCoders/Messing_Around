@@ -28,7 +28,8 @@ public class Slime extends RPG_Game{
             }
             System.out.println("You did " + damageDone + " damage.");//          Tells people how much damage they did
             attacking = false;
-        }else if(!attacking && !justEncountered){
+            RPGMonsterFighter.Creatures.Slime.main(args);
+        }else if(!attacking){
             damageTaken = NumGen.nextInt(damageRandom);
             damageTaken = damageTaken - plrDef;
             damageTaken = damageTaken + 1;//                                     Adds 1 to damage taken to take at least 1 damage

@@ -41,7 +41,7 @@ public class Wizard extends RPG_Game{
         }if(plrHp == 0){
             alive = false;
         }
-        Wizard.gainMana();
+        //Wizard.gainMana();
         RPGMonsterFighter.Encounters.BattleSystem.main(args);
     }
 }
