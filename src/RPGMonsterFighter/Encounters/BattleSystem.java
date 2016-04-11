@@ -10,6 +10,7 @@ public class BattleSystem extends MonsterChoice{
             userInput = sc.nextLine();
             switch(userInput.toUpperCase()){
                 case "FIGHT":
+                    attacking = true;
                     switch(monsterChoice){
                         case 0:
                             RPGMonsterFighter.Creatures.Zombie.main(args);
@@ -18,6 +19,7 @@ public class BattleSystem extends MonsterChoice{
                             RPGMonsterFighter.Creatures.Spider.main(args);
                             break;
                         case 2:
+                            RPGMonsterFighter.Creatures.Slime.main(args);
                             break;
                         case 3:
                             break;

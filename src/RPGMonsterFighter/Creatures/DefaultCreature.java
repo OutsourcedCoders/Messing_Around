@@ -29,4 +29,10 @@ public class DefaultCreature {
     public void loseDef(int lostDef){
         defense = defense - lostDef;
     }
+    public void gainHealth(int gainedHealth){
+        health = health + gainedHealth;
+    }
+    public void gainDefense(int gainedDefense){
+        defense = defense + gainedDefense;
+    }
 }

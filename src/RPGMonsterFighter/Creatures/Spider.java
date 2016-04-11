@@ -4,20 +4,20 @@ import RPGMonsterFighter.RPG_Game;
 public class Spider extends RPG_Game{
     public static DefaultCreature Spider = new DefaultCreature(75, 0, 5);
     public static void main(String[] args) {
-        if (justEncountered){
+        if(justEncountered){
             System.out.println("\nA terrifying GIANT SPIDER crawls towards you.");
             Spider.setHealth(75 + NumGen.nextInt(25));//                         Default health
             Spider.setMana(0);
             Spider.setDefense(5);
             justEncountered = false;
         }
-        if (hasChecked){
+        if(hasChecked){
             System.out.println("SPIDER attributes:");
             System.out.println("HP   = " + Spider.health);
             System.out.println("DEF  = " + Spider.defense);
             System.out.println("MANA = " + Spider.mana);
-        }
-        if (attacking){
+            hasChecked = false;
+        }if(attacking){
             damageDone = NumGen.nextInt(damageRandom);//                         Randomizes damage from a val of 0-5
             damageDone = damageDone * weaponClass;//                             Currently unused
             damageDone = damageDone - Spider.defense;//                          Uses defense to change damage done
@@ -29,14 +29,15 @@ public class Spider extends RPG_Game{
                 System.out.println("YES!");
             }
             System.out.println("You did " + damageDone + " damage.");//          Tells people how much damage they did
-        }else if (!attacking && !justEncountered){
+            attacking = false;
+        }else if(!attacking && !justEncountered){
             damageTaken = NumGen.nextInt(damageRandom);
             damageTaken = damageTaken - plrDef;
             damageTaken = damageTaken + 1;//                                     Adds 1 to damage taken to take at least 1 damage
             Player.loseHealth(damageTaken);//                                    Script for taking damage
             System.out.println("\nOh no!");
             System.out.println("You took " + damageTaken + " damage!");//        Tells people how much damage they took
-        }if (plrHp == 0){
+        }if(plrHp == 0){
             alive = false;
         }
         RPGMonsterFighter.Encounters.BattleSystem.main(args);
