@@ -17,8 +17,7 @@ public class Slime extends RPG_Game{
             System.out.println("MANA = " + Slime.mana);
             hasChecked = false;
         }if(attacking){
-            damageDone = NumGen.nextInt(5);//                                    Randomizes damage from a val of 0-5
-            Slime.loseHealthMob(damageDone);
+            Slime.loseHealthMob(NumGen.nextInt(5));
             if(Slime.defense != 0 && NumGen.nextInt(10) <= 6){
                 Slime.loseDef(1);
                 System.out.println("SLIME MONSTER lost his only defense!");
@@ -38,6 +37,7 @@ public class Slime extends RPG_Game{
             System.out.println("SLIME has died!");
             System.out.println("You got 10 exp!");
             inBattle = false;
+            RPGMonsterFighter.Encounters.World.main(args);
         }
         RPGMonsterFighter.Encounters.BattleSystem.main(args);
     }

@@ -24,19 +24,20 @@ public class DefaultCreature extends MessingAroundMain{
         defense = setDefense;
     }
     public void loseHealthMob(int lostMobHealth){
-        damage = lostMobHealth * weaponClass;//                                     Currently unused
-        damage = damage - defense;//                                             Uses defense to change damage done
-        if(damage >= 0){
-            damage = 1;//                                                        Adds 1 to damage done to do at least 1 damage
+        lostMobHealth = lostMobHealth * weaponClass;//                                     Currently unused
+        lostMobHealth = lostMobHealth - defense;//                                             Uses defense to change damage done
+        if(lostMobHealth<= 0){
+            lostMobHealth = 1;//                                                        Adds 1 to damage done to do at least 1 damage
         }
-        lostMobHealth = damage;
+        damage = lostMobHealth;
         health = health - lostMobHealth;
     }
     public void loseHealthPlayer(int lostPlrHealth){
         lostPlrHealth = lostPlrHealth - defense;
-        if(lostPlrHealth >= 0){
+        if(lostPlrHealth <= 0){
             lostPlrHealth = 1;
         }
+        damage = lostPlrHealth;
         health = health - lostPlrHealth;
     }
     public void loseMana(int lostMana){

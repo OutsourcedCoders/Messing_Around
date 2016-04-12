@@ -49,6 +49,7 @@ public class MessingAroundMain extends UserInputs{
         while(!userAnswered) {
             System.out.println("What kinda game would you like to play?");
             if(isDeveloper){
+                System.out.println("");
                 System.out.println("Choices: ");
                 System.out.println("Rock Paper Scissors");
                 System.out.println("Nation Simulator");
