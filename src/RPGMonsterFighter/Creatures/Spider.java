@@ -30,7 +30,7 @@ public class Spider extends RPG_Game{
             RPGMonsterFighter.Creatures.Spider.main(args);
         }else if (!attacking){
             damageTaken = NumGen.nextInt(damageRandom);
-            Player.loseHealthPlayer(Player.damage);//                            Script for taking damage
+            Player.loseHealthPlayer(damageTaken);//                            Script for taking damage
             System.out.println("\nOh no!");
             System.out.println("You took " + damageTaken + " damage!");//        Tells people how much damage they took
         }if(plrHp == 0){

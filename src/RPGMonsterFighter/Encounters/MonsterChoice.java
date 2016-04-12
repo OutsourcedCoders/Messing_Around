@@ -75,7 +75,7 @@ public class MonsterChoice extends World{
                 System.out.println("Oh dear god!");
                 System.out.println("SPARKS crackle around you!");
                 justEncountered = true;
-                //RPGMonsterFighter.Creatures.Wizard.main(args);
+                RPGMonsterFighter.Creatures.Wizard.main(args);
                 break;
             case 4:
                 monsterChoice = 4;

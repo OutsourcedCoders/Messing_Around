@@ -22,7 +22,7 @@ public class BattleSystem extends MonsterChoice{
                             RPGMonsterFighter.Creatures.Slime.main(args);
                             break;
                         case 3:
-                            //RPGMonsterFighter.Creatures.Wizard.main(args);
+                            RPGMonsterFighter.Creatures.Wizard.main(args);
                             break;
                         case 4:
                             //RPGMonsterFighter.Creatures.Archer.main(args);
@@ -71,7 +71,7 @@ public class BattleSystem extends MonsterChoice{
                                         break;
                                     case 3:
                                         hasChecked = true;
-                                        //RPGMonsterFighter.Creatures.Wizard.main(args);
+                                        RPGMonsterFighter.Creatures.Wizard.main(args);
                                         break;
                                     case 4:
                                         hasChecked = true;
