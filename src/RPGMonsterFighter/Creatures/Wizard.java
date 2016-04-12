@@ -19,7 +19,7 @@ public class Wizard extends RPG_Game{
             hasChecked = false;
         }if(attacking){
             damageDone = NumGen.nextInt(damageRandom);//                         Randomizes damage from a val of 0-5
-            Wizard.loseHealthMob(Wizard.damage);//                                  Script for doing damage
+            Wizard.loseHealthMob(Wizard.damage);//                               Script for doing damage
             if(Wizard.defense != 0 && NumGen.nextInt(10) <= 7){
                 Wizard.loseDef(1);
                 System.out.println("WIZARD lost 1 defense!");
