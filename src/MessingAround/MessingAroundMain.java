@@ -74,9 +74,15 @@ public class MessingAroundMain extends UserInputs{
                     System.out.println("\nHell yeah!");
                     userAnswered = true;
                     RPGMonsterFighter.RPG_Game.main(args);
-                case "TIC TAC TOE":
-                    System.out.println("Never hate the classics");
-                    TicTacToe.Game.main(args);
+                case "TIC TAC TOE"://                                            ----------------------------
+                    System.out.println("Never hate the classics");//                  EASTER EGGS START!
+                    TicTacToe.Game.main(args);//                                 ----------------------------
+                    break;//                                                     Yes, I'm serious. Go crazy!
+                case "SECRET"://                                                 -Jasonface900
+                    System.out.println("It's a secret to everybody.");
+                    break;
+                case "MEINCRAFT":
+                    System.out.println("Ja, MEINCRAFT für dich!");
                     break;
                 default:
                     System.out.println(userInput);
