@@ -16,9 +16,13 @@ public class Zombie extends RPG_Game{
             System.out.println("DEF  = " + Zombie.defense);
             System.out.println("MANA = " + Zombie.mana);
             hasChecked = false;
-        }if(attacking){
+        }if(hasDefended){
+            System.out.println("ZOMBIE defended your attack!");
+            hasDefended = false;
+        }
+            if(attacking){
             damageDone = NumGen.nextInt(damageRandom);//                         Randomizes damage from a val of 0-5
-            Zombie.loseHealthMob(Zombie.damage);
+            Zombie.loseHealthMob(damageDone);
             System.out.println("You did " + Zombie.damage + " damage.");//       Tells people how much damage they did
             attacking = false;
             RPGMonsterFighter.Creatures.Zombie.main(args);

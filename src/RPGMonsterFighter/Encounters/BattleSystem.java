@@ -110,6 +110,7 @@ public class BattleSystem extends MonsterChoice{
                             inBattle = false;
                             break;
                         case 1:
+                            System.out.println("");
                             break;
                         case 2:
                             break;

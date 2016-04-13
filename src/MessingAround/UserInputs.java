@@ -2,11 +2,13 @@ package MessingAround;
 //                                                                               ----------------------------------------
 //                                                                               This is made for use of all our games :)
 //                                                                               ----------------------------------------
+//
 //                                                                               Brought to you by:
-//                                                                               Jasonface900
+//                                                                                 Jasonface900
 //                                                                               YourAverageRandy
-//                                                                               Sci1017
-//                                                                               ----------------------------------------
+//                                                                                    Sci1017
+//
+//                                                                               ------------------
 import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Scanner;
@@ -36,13 +38,14 @@ public class UserInputs {
     public static int plrHp   = 100;
     public static int plrDef  = 0;
     public static int plrMana = 0;
-    public static boolean hasChecked     = false;
-    public static boolean creatureHere = false;
-    public static boolean gotHit       = false;
-    public static boolean inBattle     = false;
-    public static boolean alive        = true;
-    public static boolean attacking    = false;
+    public static boolean hasChecked      = false;
+    public static boolean creatureHere    = false;
+    public static boolean gotHit          = false;
+    public static boolean inBattle        = false;
+    public static boolean alive           = true;
+    public static boolean attacking       = false;
     public static boolean justEncountered = false;
+    public static boolean hasDefended     = false;
     //public DefaultPlains Plains = new DefaultPlains(); 
     
     //                                                                           ----------------------------------------

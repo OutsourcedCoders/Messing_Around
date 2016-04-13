@@ -2,11 +2,11 @@ package MessingAround;
 //                                                                                  MESSING AROUND!
 //                                                                               --------------------
 //                                                                               Brought to you by:
-//                                                                               Jasonface900
-//                                                                               YourAverageRandy
-//                                                                               Sci1017
+//                                                                                   Jasonface900
+//                                                                                 YourAverageRandy
+//                                                                                     Sci1017
 //                                                                               and created on:
-//                                                                               March 23th, 2016
+//                                                                                 March 23th, 2016
 //                                                                               --------------------
 public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
@@ -84,7 +84,7 @@ public class MessingAroundMain extends UserInputs{
                     //                                                           Yes, I'm serious. Go crazy!
                     //                                                            NOTE: nothing beyond this
                     //                                                            should be taken seriously.
-                    //                                                                   -Jasonface900
+                    //                                                                  -Jasonface900
                     //                                                           ----------------------------
                 case "SECRET":
                     System.out.println("It's a secret to everybody.");
