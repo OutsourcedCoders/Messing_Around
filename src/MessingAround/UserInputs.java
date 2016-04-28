@@ -13,7 +13,13 @@ import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class UserInputs {
+    
+    public static void clearScreen() {  
+    System.out.print("\033[H\033[2J");    
+    }  
+    
     //                                                                           ----------------------------------------
     //                                                                           Jorge's Simple Input Scanner
     public static Scanner sc = new Scanner(System.in);
@@ -33,6 +39,7 @@ public class UserInputs {
     public static int creatureRandom = 8;
     public static int windRandom     = 5;
     public static int lootRandomVal  = 5;
+    public static int creaturesDead  = 0;
     public static int damageTaken = 0;
     public static int damageDone  = 0;
     public static int plrHp   = 100;

@@ -2,6 +2,10 @@ package RPGMonsterFighter.Encounters;
 
 public class BattleSystem extends MonsterChoice{
     public static void main(String[] args) {
+        if(Player.health <= 0){
+            alive = false;
+            RPGMonsterFighter.Encounters.World.main(args);
+        }
         while(inBattle = true){
             System.out.println("----------------------------");
             System.out.println("| FIGHT | ITEM | ACT | RUN |");
