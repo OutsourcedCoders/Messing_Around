@@ -49,9 +49,9 @@ public class BattleSystem extends MonsterChoice{
                 case "ACT":
                     userAnswered = false;
                     while(!userAnswered){
-                        System.out.println("---------------");
-                        System.out.println("| CHECK | SAY |");
-                        System.out.println("---------------");
+                        System.out.println("----------------------");
+                        System.out.println("| CHECK | SAY | BACK |");
+                        System.out.println("----------------------");
                         System.out.print(": ");
                         userInput = sc.nextLine();
                         switch(userInput.toUpperCase()){
@@ -94,10 +94,16 @@ public class BattleSystem extends MonsterChoice{
                                         System.out.println("DEF: OVER 9000!");
                                         System.out.println("ATK: 1337");
                                         System.out.println("HP:  8008");
+                                        //RPGMonsterFighter.Creatures.Glitch.main(args);
                                         break;
                                 }
                                 break;
                             case "SAY":
+                                System.out.println("This isn't finished yet.");
+                                System.out.println(":");
+                                break;
+                            case "BACK":
+                                userAnswered = true;
                                 break;
                         }
                     }

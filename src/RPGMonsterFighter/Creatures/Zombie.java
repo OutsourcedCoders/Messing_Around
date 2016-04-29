@@ -10,6 +10,11 @@ public class Zombie extends RPG_Game{
             Zombie.setDefense(0);
             Zombie.setMana(0);
             justEncountered = false;
+        }if (hasChecked){
+            System.out.println("ZOMBIE attributes:");
+            System.out.println("HP   = " + Zombie.health);
+            System.out.println("DEF  = " + Zombie.defense);
+            System.out.println("MANA = " + Zombie.mana);
         }
         if (attacking){
             damageDone = NumGen.nextInt(damageRandom);//                         Randomizes damage from a val of 0-5

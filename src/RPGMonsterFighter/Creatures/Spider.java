@@ -21,7 +21,9 @@ public class Spider extends RPG_Game{
             damageDone = NumGen.nextInt(damageRandom);//                         Randomizes damage from a val of 0-5
             damageDone = damageDone * weaponClass;//                             Currently unused
             damageDone = damageDone - Spider.defense;//                          Uses defense to change damage done
-            damageDone = damageDone + 1;//                                       Adds 1 to damage done to do at least 1 damage
+            if (damageDone <= 0){
+                damageDone = 1;//                                                Adds 1 to damage done to do at least 1 damage
+            }
             Spider.loseHealth(damageDone);//                                     Script for doing damage
             if(Spider.defense != 0 && NumGen.nextInt(10) <= 6){
                 Spider.loseDef(1);

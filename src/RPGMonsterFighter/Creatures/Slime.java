@@ -15,7 +15,9 @@ public class Slime extends RPG_Game{
             damageDone = NumGen.nextInt(damageRandom);//                         Randomizes damage from a val of 0-5
             damageDone = damageDone * weaponClass;//                             Currently unused
             damageDone = damageDone + 1;//                                       Adds 1 to damage done to do at least 1 damage
-            Slime.loseHealth(damageDone);//                                      Script for doing damage
+            if(damageDone <= 0){
+                Slime.loseHealth(damageDone);//                                  Script for doing damage
+            }
             if(Slime.defense != 0 && NumGen.nextInt(10) <= 6){
                 Slime.loseDef(1);
                 System.out.println("Slime lost his only defense!");
