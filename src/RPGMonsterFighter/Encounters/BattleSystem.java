@@ -60,17 +60,10 @@ public class BattleSystem extends MonsterChoice {
                     break;
                 case "ACT":
                     userAnswered = false;
-<<<<<<< HEAD
                     while(!userAnswered){
                         System.out.println("----------------------");
                         System.out.println("| CHECK | SAY | BACK |");
                         System.out.println("----------------------");
-=======
-                    while (!userAnswered) {
-                        System.out.println("---------------");
-                        System.out.println("| CHECK | SAY |");
-                        System.out.println("---------------");
->>>>>>> 9222ffffacbf0abc1c2f4f9e4d56106a9d711a5a
                         System.out.print(": ");
                         userInput = sc.nextLine();
                         switch (userInput.toUpperCase()) {
