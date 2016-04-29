@@ -2,11 +2,11 @@ package MessingAround;
 //                                                                                  MESSING AROUND!
 //                                                                               --------------------
 //                                                                               Brought to you by:
-//                                                                               Jasonface900
-//                                                                               YourAverageRandy
-//                                                                               Sci1017
+//                                                                                   Jasonface900
+//                                                                                 YourAverageRandy
+//                                                                                     Sci1017
 //                                                                               and created on:
-//                                                                               March 23th, 2016
+//                                                                                 March 23th, 2016
 //                                                                               --------------------
 public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
@@ -45,11 +45,14 @@ public class MessingAroundMain extends UserInputs{
                 break;
             }
         }
+        System.out.println("What's your name?");
+        System.out.print(": ");
+        userName = sc.next();
         userAnswered = false;//                                                  Game Selection
         while(!userAnswered) {
             System.out.println("What kinda game would you like to play?");
             if(isDeveloper){
-                System.out.println("Choices: ");
+                System.out.println("\nChoices: ");
                 System.out.println("Rock Paper Scissors");
                 System.out.println("Nation Simulator");
                 System.out.println("RPG");
@@ -76,6 +79,20 @@ public class MessingAroundMain extends UserInputs{
                 case "TIC TAC TOE":
                     System.out.println("Never hate the classics");
                     TicTacToe.Game.main(args);
+                    break;
+                    //                                                           ----------------------------
+                    //                                                                EASTER EGGS START!
+                    //                                                           ----------------------------
+                    //                                                           Yes, I'm serious. Go crazy!
+                    //                                                            NOTE: nothing beyond this
+                    //                                                            should be taken seriously.
+                    //                                                                  -Jasonface900
+                    //                                                           ----------------------------
+                case "SECRET":
+                    System.out.println("It's a secret to everybody.");
+                    break;
+                case "MEINCRAFT":
+                    System.out.println("Ja, MEINCRAFT für dich!");
                     break;
                 default:
                     System.out.println(userInput);

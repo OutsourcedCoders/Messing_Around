@@ -2,6 +2,7 @@ package RPGMonsterFighter.Creatures;
 import RPGMonsterFighter.RPG_Game;
 
 public class Spider extends RPG_Game{
+<<<<<<< HEAD
     public static DefaultCreature Spider = new DefaultCreature(75, 0, 5);
     public static void main(String[] args) {
         if (justEncountered){
@@ -45,4 +46,7 @@ public class Spider extends RPG_Game{
         }
         RPGMonsterFighter.Encounters.BattleSystem.main(args);
     }
+=======
+    
+>>>>>>> 9222ffffacbf0abc1c2f4f9e4d56106a9d711a5a
 }

@@ -1,8 +1,9 @@
  package RPGMonsterFighter.Encounters;
 
-public class MonsterChoice extends World{
+ import RPGMonsterFighter.RPG_Game;
+public class MonsterChoice extends RPG_Game{
     public static void main(String[] args) {
-        monsterChoice = NumGen.nextInt(creatureRandom);
+        monsterChoice = NumGen.nextInt(8);
         if (isDeveloper){
             System.out.println("So, you're a developer.");
             while(!userAnswered){
@@ -45,9 +46,23 @@ public class MonsterChoice extends World{
                         monsterChoice = 8;
                         userAnswered = true;
                         break;
+                    default:
+                        userAnswered = false;
+                        System.out.println("Please choose a correct monster.");
+                        System.out.println("\t-Zombie");
+                        System.out.println("\t-Spider");
+                        System.out.println("\t-Slime");
+                        System.out.println("\t-Wizard");
+                        System.out.println("\t-Archer");
+                        System.out.println("\t-Giant");
+                        System.out.println("\t-Dragon");
+                        System.out.println("\t-Dwarf");
+                        System.out.println("\t-??????");
+                        break;
                 }
             }
         }
+        System.out.println("");
         switch(monsterChoice){
             case 0:
                 monsterChoice = 0;
@@ -75,7 +90,7 @@ public class MonsterChoice extends World{
                 System.out.println("Oh dear god!");
                 System.out.println("SPARKS crackle around you!");
                 justEncountered = true;
-                //RPGMonsterFighter.Creatures.Wizard.main(args);
+                RPGMonsterFighter.Creatures.Mage.main(args);
                 break;
             case 4:
                 monsterChoice = 4;
@@ -113,6 +128,10 @@ public class MonsterChoice extends World{
                 //RPGMonsterFighter.Creatures.Glitch.main(args);
                 break;
         }
-        RPGMonsterFighter.Encounters.BattleSystem.main(args);
+        System.out.println("DAMN IT YOU BROKE BATTLE SYSTEM!");
+        System.out.println("You will now proceed to PERISH!");
+        Player.setHealth(0);
+        alive = false;
+        RPGMonsterFighter.Encounters.World.main(args);
     }
 }

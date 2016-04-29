@@ -2,6 +2,7 @@ package RPGMonsterFighter.Creatures;
 import RPGMonsterFighter.RPG_Game;
 
 public class Zombie extends RPG_Game{
+<<<<<<< HEAD
     public static DefaultCreature Zombie = new DefaultCreature(50, 0, 0);
     public static void main(String[] args) {
         if (justEncountered){
@@ -36,4 +37,7 @@ public class Zombie extends RPG_Game{
         }
         RPGMonsterFighter.Encounters.BattleSystem.main(args);
     }
+=======
+   
+>>>>>>> 9222ffffacbf0abc1c2f4f9e4d56106a9d711a5a
 }

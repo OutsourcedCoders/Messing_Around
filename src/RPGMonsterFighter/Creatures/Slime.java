@@ -2,6 +2,7 @@ package RPGMonsterFighter.Creatures;
 import RPGMonsterFighter.RPG_Game;
 
 public class Slime extends RPG_Game{
+<<<<<<< HEAD
     public static DefaultCreature Slime = new DefaultCreature(15, 0, 1);
     public static void main(String[] args) {
         if (justEncountered){
@@ -38,4 +39,8 @@ public class Slime extends RPG_Game{
         }
         RPGMonsterFighter.Encounters.BattleSystem.main(args);
     }
+=======
+    public static DefaultCreature Slime = new DefaultCreature("SLIME", 15, 0, 1);
+
+>>>>>>> 9222ffffacbf0abc1c2f4f9e4d56106a9d711a5a
 }

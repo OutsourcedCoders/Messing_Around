@@ -51,6 +51,7 @@ public class World extends UserInputs{
         if(inBattle == true){
             RPGMonsterFighter.Encounters.MonsterChoice.main(args);
         }else if(!alive){
+            System.out.println();
             System.out.println("A great hero has FALLEN.");
             System.out.print("His untimely demise was caused by ");
             switch(monsterChoice){
