@@ -168,6 +168,7 @@ public class BattleSystem extends MonsterChoice {
             damageDone = NumGen.nextInt(damageRandom);//                         Randomizes damage from a val of 0-5
             Zombie.loseHealthMob(damageDone);
             System.out.println("You did " + Zombie.damage + " damage.");//       Tells people how much damage they did
+            Zombie.messageHurt();
             attacking = false;
         } else if (!attacking) {
             damageTaken = NumGen.nextInt(damageRandom);

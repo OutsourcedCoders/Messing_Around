@@ -37,7 +37,7 @@ public class DefaultCreature extends MessingAroundMain{
                 defense = defense - 1;
                 lostDef = true;
                 System.out.println(name + " lost 1 DEFENSE!");
-                System.out.println("");
+                System.out.println("Nice hit!");
             }
         }
         if(lostMobHealth <= 0){
@@ -90,11 +90,11 @@ public class DefaultCreature extends MessingAroundMain{
         }else if(random >= 40){
             System.out.println(name + " needs a ");
         }else if(random >= 30){
-            System.out.println(name);
+            System.out.println(name + " has to catch it's breath.");
         }else if(random >= 20){
-            
+            System.out.println(name + " is getting a little tired.");
         }else if(random >= 10){
-            
+            System.out.println(name + " looks like he's slowing down.");
         }else{
             System.out.println("You broke it D:");
             System.out.println("Prepare for a GLITCH MONSTER!");

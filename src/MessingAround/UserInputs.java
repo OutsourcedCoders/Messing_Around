@@ -53,6 +53,7 @@ public class UserInputs {
     public static boolean attacking       = false;
     public static boolean justEncountered = false;
     public static boolean hasDefended     = false;
+    public static String  userName;
     //public DefaultPlains Plains = new DefaultPlains(); 
     
     //                                                                           ----------------------------------------

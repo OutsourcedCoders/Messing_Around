@@ -6,7 +6,7 @@ import RPGMonsterFighter.Creatures.DefaultCreature;
 //                                                                               Note: This is just the launcher.
 
 public class RPG_Game extends MessingAroundMain{
-    public static DefaultCreature Player = new DefaultCreature(plrHp, plrMana, plrDef);
+    public static DefaultCreature Player = new DefaultCreature(userName, plrHp, plrMana, plrDef);
     public static void main(String[] args) {
         userAnswered = false;
         System.out.println("Hello, and welcome to Jasonface900's RPG Fighter");
@@ -15,7 +15,9 @@ public class RPG_Game extends MessingAroundMain{
             userInput = sc.nextLine();//                                         Waits for input
             switch(userInput.toUpperCase()){
                 case "YES":
-                    System.out.println("Let's get started then!");
+                    System.out.println("As " + userName + " begins their adventure,");
+                    System.out.println("they hear a roaring sound in the distance,");
+                    System.out.println("calling them.");
                     userAnswered = true;
                     break;
                 case "NO":

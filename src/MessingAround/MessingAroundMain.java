@@ -45,12 +45,14 @@ public class MessingAroundMain extends UserInputs{
                 break;
             }
         }
+        System.out.println("What's your name?");
+        System.out.print(": ");
+        userName = sc.next();
         userAnswered = false;//                                                  Game Selection
         while(!userAnswered) {
             System.out.println("What kinda game would you like to play?");
             if(isDeveloper){
-                System.out.println("");
-                System.out.println("Choices: ");
+                System.out.println("\nChoices: ");
                 System.out.println("Rock Paper Scissors");
                 System.out.println("Nation Simulator");
                 System.out.println("RPG");
