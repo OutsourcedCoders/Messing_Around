@@ -11,11 +11,11 @@ public class DefaultCreature extends MessingAroundMain{
     public boolean lostDef;
     public int damage;
     
-    public DefaultCreature(String dfName,int dfHealth, int dfMana, int dfDefense){
+    public DefaultCreature(String dfName,int dfHp, int dfMana, int dfDef){
         name = dfName;
-        health = dfHealth;
+        health = dfHp;
         mana = dfMana;
-        defense = dfDefense;
+        defense = dfDef;
     }
     public void setHealth(int setHealth){
         health = setHealth;
@@ -25,34 +25,6 @@ public class DefaultCreature extends MessingAroundMain{
     }
     public void setDefense(int setDefense){
         defense = setDefense;
-    }
-    public void loseHealthMob(int lostMobHealth){
-        lostMobHealth = lostMobHealth * weaponClass;//                           Currently unused
-        int random = NumGen.nextInt(100);
-        if(random >= 70 && defense >= 0){
-            hasDefended = true;
-            lostMobHealth = lostMobHealth - defense;//                           Uses defense to change damage done
-            random = NumGen.nextInt();
-            if(random <= 40){
-                defense = defense - 1;
-                lostDef = true;
-                System.out.println(name + " lost 1 DEFENSE!");
-                System.out.println("Nice hit!");
-            }
-        }
-        if(lostMobHealth <= 0){
-            lostMobHealth = 1;//                                                 Adds 1 to damage done to do at least 1 damage
-        }
-        damage = lostMobHealth;
-        health = health - lostMobHealth;
-    }
-    public void loseHealthPlayer(int lostPlrHealth){
-        lostPlrHealth = lostPlrHealth - defense;
-        if(lostPlrHealth <= 0){
-            lostPlrHealth = 1;
-        }
-        damage = lostPlrHealth;
-        health = health - lostPlrHealth;
     }
     public void loseMana(int lostMana){
         mana = mana - lostMana;
@@ -98,7 +70,34 @@ public class DefaultCreature extends MessingAroundMain{
         }else{
             System.out.println("You broke it D:");
             System.out.println("Prepare for a GLITCH MONSTER!");
-            
+        } 
+    }
+    public void getHitMob(int lostMobHealth){
+        lostMobHealth = lostMobHealth * weaponClass;//                           Currently unused
+        int random = NumGen.nextInt(100);
+        if(random >= 70 && defense >= 0){
+            hasDefended = true;
+            lostMobHealth = lostMobHealth - defense;//                           Uses defense to change damage done
+            random = NumGen.nextInt();
+            if(random <= 40){
+                defense = defense - 1;
+                lostDef = true;
+                System.out.println(name + " lost 1 DEFENSE!");
+                System.out.println("Nice hit!");
+            }
         }
+        if(lostMobHealth <= 0){
+            lostMobHealth = 1;//                                                 Adds 1 to damage done to do at least 1 damage
+        }
+        damage = lostMobHealth;
+        health = health - lostMobHealth;
+    }
+    public void getHitPlayer(int lostPlrHealth){
+        lostPlrHealth = lostPlrHealth - defense;
+        if(lostPlrHealth <= 0){
+            lostPlrHealth = 1;
+        }
+        damage = lostPlrHealth;
+        health = health - lostPlrHealth;
     }
 }

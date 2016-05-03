@@ -3,7 +3,7 @@
  import RPGMonsterFighter.RPG_Game;
 public class MonsterChoice extends RPG_Game{
     public static void main(String[] args) {
-        monsterChoice = NumGen.nextInt(8);
+        monsterChoice = NumGen.nextInt(7);
         if (isDeveloper){
             System.out.println("So, you're a developer.");
             while(!userAnswered){
@@ -69,56 +69,48 @@ public class MonsterChoice extends RPG_Game{
                 System.out.println("Oh no!");
                 System.out.println("The smell of ROTTEN FLESH hits you.");
                 justEncountered = true;
-                RPGMonsterFighter.Creatures.Zombie.main(args);
                 break;
             case 1:
                 monsterChoice = 1;
                 System.out.println("This is bad!");
                 System.out.println("Your feet get entangled in sticky WEBS.");
                 justEncountered = true;
-                RPGMonsterFighter.Creatures.Spider.main(args);
                 break;
             case 2:
                 monsterChoice = 2;
                 System.out.println("Oh dang!");
                 System.out.println("You smell the sickly scent of SLIME.");
                 justEncountered = true;
-                RPGMonsterFighter.Creatures.Slime.main(args);
                 break;
             case 3:
                 monsterChoice = 3;
                 System.out.println("Oh dear god!");
                 System.out.println("SPARKS crackle around you!");
                 justEncountered = true;
-                RPGMonsterFighter.Creatures.Mage.main(args);
                 break;
             case 4:
                 monsterChoice = 4;
                 System.out.println("Watch out!");
                 System.out.println("An ARROW whizzes past!");
                 justEncountered = true;
-                //RPGMonsterFighter.Creatures.Archer.main(args);
                 break;
             case 5:
                 monsterChoice = 5;
                 System.out.println("What is that?");
                 System.out.println("The ground TREMBLES around you.");
                 justEncountered = true;
-                //RPGMonsterFighter.Creatures.Giant.main(args);
                 break;
             case 6:
                 monsterChoice = 6;
                 System.out.println("DRAGONS!");
                 System.out.println("You think you don't have to say anything.");
                 justEncountered = true;
-                //RPGMonsterFighter.Creatures.EffingDragon.main(args);
                 break;
             case 7:
                 monsterChoice = 7;
                 System.out.println("What's that?");
                 System.out.println("The smell of ALE hits you.");
                 justEncountered = true;
-                //RPGMonsterFighter.Creatures.Dwarf.main(args);
                 break;
             default:
                 monsterChoice = 8;
@@ -128,10 +120,6 @@ public class MonsterChoice extends RPG_Game{
                 //RPGMonsterFighter.Creatures.Glitch.main(args);
                 break;
         }
-        System.out.println("DAMN IT YOU BROKE BATTLE SYSTEM!");
-        System.out.println("You will now proceed to PERISH!");
-        Player.setHealth(0);
-        alive = false;
-        RPGMonsterFighter.Encounters.World.main(args);
+        RPGMonsterFighter.Encounters.BattleSystem.BattleScript(args);
     }
 }

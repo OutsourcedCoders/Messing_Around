@@ -7,10 +7,10 @@ import static RPGMonsterFighter.RPG_Game.Player;
 
 public class BattleSystem extends MonsterChoice {
 
-    public static void main(String[] args) {
+    public static void BattleScript() {
         if (Player.health <= 0) {
             alive = false;
-            RPGMonsterFighter.Encounters.World.main(args);
+            World.LandGen();
         }
         while (inBattle = true) {
             System.out.println("----------------------------");
@@ -144,7 +144,7 @@ public class BattleSystem extends MonsterChoice {
                     }
             }
         }
-        RPGMonsterFighter.Encounters.World.main(args);
+        RPGMonsterFighter.Encounters.World.LandGen();
     }
 
     public static void Zombie() {
@@ -166,13 +166,13 @@ public class BattleSystem extends MonsterChoice {
         }
         if (attacking) {
             damageDone = NumGen.nextInt(damageRandom);//                         Randomizes damage from a val of 0-5
-            Zombie.loseHealthMob(damageDone);
+            Zombie.getHitMob(damageDone);
             System.out.println("You did " + Zombie.damage + " damage.");//       Tells people how much damage they did
             Zombie.messageHurt();
             attacking = false;
         } else if (!attacking) {
             damageTaken = NumGen.nextInt(damageRandom);
-            Player.loseHealthPlayer(Player.damage);//                                    Script for taking damage
+            Player.getHitPlayer(Player.damage);//                                    Script for taking damage
             System.out.println("\nOh no!");
             System.out.println("You took " + Player.damage + " damage!");//        Tells people how much damage they took
         }
@@ -194,7 +194,7 @@ public class BattleSystem extends MonsterChoice {
             Spider.checkCreature();
         }
         if (attacking) {
-            Spider.loseHealthMob(Spider.damage);//                               Script for doing damage
+            Spider.getHitMob(Spider.damage);//                               Script for doing damage
             System.out.println("You did " + Spider.damage + " damage.");//       Tells people how much damage they did
             if (Spider.lostDef) {
                 System.out.println("SPIDER's DEFENSE dropped by 1!");
@@ -204,7 +204,7 @@ public class BattleSystem extends MonsterChoice {
 
         } else if (!attacking) {
             damageTaken = NumGen.nextInt(damageRandom);
-            Player.loseHealthPlayer(damageTaken);//                            Script for taking damage
+            Player.getHitPlayer(damageTaken);//                            Script for taking damage
             System.out.println("\nOh no!");
             System.out.println("You took " + damageTaken + " damage!");//        Tells people how much damage they took
         }
@@ -226,7 +226,7 @@ public class BattleSystem extends MonsterChoice {
             hasChecked = false;
         }
         if (attacking) {
-            Slime.loseHealthMob(NumGen.nextInt(5));
+            Slime.getHitMob(NumGen.nextInt(5));
             if (Slime.defense != 0 && NumGen.nextInt(100) <= 60) {
                 Slime.loseDef(1);
                 System.out.println("SLIME MONSTER lost his only defense!");
@@ -236,7 +236,7 @@ public class BattleSystem extends MonsterChoice {
             attacking = false;
         } else if (!attacking) {
             damageTaken = NumGen.nextInt(damageRandom);
-            Player.loseHealthPlayer(Player.damage);//                            Script for taking damage
+            Player.getHitPlayer(Player.damage);//                            Script for taking damage
             System.out.println("\nOh no!");
             System.out.println("You took " + Player.damage + " damage!");//      Tells people how much damage they took
         }
@@ -265,13 +265,14 @@ public class BattleSystem extends MonsterChoice {
         }
         if (attacking) {
             damageDone = NumGen.nextInt(damageRandom);//                         Randomizes damage from a val of 0-5
-            Wizard.loseHealthMob(Wizard.damage);//                               Script for doing damage
+            Wizard.getHitMob(Wizard.damage);//                               Script for doing damage
             if (Wizard.defense != 0 && NumGen.nextInt(10) <= 7) {
                 Wizard.loseDef(1);
                 System.out.println("WIZARD lost 1 defense!");
                 System.out.println("YES!");
             }
-            System.out.println("You did " + Wizard.damage + " damage.");//       Tells people how much damage they did
+            System.out.println(Player.name + " did " + Wizard.damage + " damage!");//       Tells people how much damage they did
+            
             attacking = false;
         } else if (!attacking) {
             Wizard.gainMana(NumGen.nextInt(5));
@@ -281,9 +282,9 @@ public class BattleSystem extends MonsterChoice {
             while (!Wizard.spellUsed) {
 
             }
-            Player.loseHealthPlayer(damageTaken);//                            Script for taking damage
+            Player.getHitPlayer(damageTaken);//                            Script for taking damage
             System.out.println("\nOh no!");
-            System.out.println("You took " + Player.damage + " damage!");//      Tells people how much damage they took
+            System.out.println(Player.name + " took " + Player.damage + " damage!");//      Tells people how much damage they took
         }
         if (plrHp == 0) {
             alive = false;

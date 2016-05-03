@@ -32,6 +32,6 @@ public class RPG_Game extends MessingAroundMain{
         Player.setHealth(100);
         Player.setMana(0);
         Player.setDefense(0);
-        RPGMonsterFighter.Encounters.World.main(args);//                         Starts game
+        
     }
 }

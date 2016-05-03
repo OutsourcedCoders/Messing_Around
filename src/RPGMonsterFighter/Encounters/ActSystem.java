@@ -3,7 +3,7 @@ package RPGMonsterFighter.Encounters;
 import MessingAround.MessingAroundMain;
 
 public class ActSystem extends MessingAroundMain{
-    public static void main(String[] args) {
+    public static void actSystem(String[] args) {
         userAnswered = false;
         while(!userAnswered){
             System.out.flush();
@@ -19,7 +19,7 @@ public class ActSystem extends MessingAroundMain{
                         userInput = sc.nextLine();
                         switch(userInput.toUpperCase()){
                             case "YES":
-                                RPGMonsterFighter.Encounters.World.main(args);
+                                RPGMonsterFighter.Encounters.World.LandGen();
                                 break;
                             case "NO":
                                 userAnswered = true;
