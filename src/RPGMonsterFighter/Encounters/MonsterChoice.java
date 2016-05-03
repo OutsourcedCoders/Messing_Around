@@ -69,6 +69,7 @@ public class MonsterChoice extends RPG_Game{
                 System.out.println("Oh no!");
                 System.out.println("The smell of ROTTEN FLESH hits you.");
                 justEncountered = true;
+                Ecounters.BattleSystem.
                 break;
             case 1:
                 monsterChoice = 1;
@@ -120,6 +121,5 @@ public class MonsterChoice extends RPG_Game{
                 //RPGMonsterFighter.Creatures.Glitch.main(args);
                 break;
         }
-        RPGMonsterFighter.Encounters.BattleSystem.BattleScript(args);
     }
 }
