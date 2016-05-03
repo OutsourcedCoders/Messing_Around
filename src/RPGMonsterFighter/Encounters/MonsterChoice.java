@@ -2,7 +2,7 @@
 
  import RPGMonsterFighter.RPG_Game;
 public class MonsterChoice extends RPG_Game{
-    public static void main(String[] args) {
+    public static void MonsterGen(String[] args) {
         monsterChoice = NumGen.nextInt(7);
         if (isDeveloper){
             System.out.println("So, you're a developer.");

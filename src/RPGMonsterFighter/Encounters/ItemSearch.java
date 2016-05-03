@@ -1,7 +1,7 @@
 package RPGMonsterFighter.Encounters;
 
 public class ItemSearch extends World{
-    public static void main(String[] args) {
+    public static void Search() {
         lootRandomVal = NumGen.nextInt(lootRandom);
         System.out.println("You find a " + lootRandomVal + ".");
         System.out.println("Keep item?");
@@ -17,6 +17,5 @@ public class ItemSearch extends World{
                 System.out.println("Please input a valid response.");
                 break;
         }
-        RPGMonsterFighter.Encounters.World.MonsterGen(args);
     }
 }

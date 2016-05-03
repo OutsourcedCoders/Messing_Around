@@ -35,7 +35,7 @@ public class ActSystem extends MessingAroundMain{
                     if(creatureRandom <= 60){
                         inBattle = true;
                         userAnswered = false;
-                        RPGMonsterFighter.Encounters.MonsterChoice.main(args);
+                        MonsterChoice.MonsterGen(args);
                     }//                                                          stuff
                     if(creaturesDead >= 2){
                         System.out.println("But nobody came.");
@@ -43,7 +43,7 @@ public class ActSystem extends MessingAroundMain{
                     }
                     if(lootRandom >= 3){
                         userAnswered = false;
-                        RPGMonsterFighter.Encounters.ItemSearch.main(args);
+                        ItemSearch.Search();
                     }
                     System.out.println("You find nothing here.");
                     break;

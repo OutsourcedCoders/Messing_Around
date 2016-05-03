@@ -2,7 +2,6 @@ package RPGMonsterFighter.Encounters;
 
 import static MessingAround.UserInputs.*;
 import RPGMonsterFighter.Creatures.*;
-import static RPGMonsterFighter.Encounters.BattleSystem.Wizard;
 import static RPGMonsterFighter.RPG_Game.Player;
 
 public class BattleSystem extends MonsterChoice {
@@ -23,31 +22,31 @@ public class BattleSystem extends MonsterChoice {
                     attacking = true;
                     switch (monsterChoice) {
                         case 0:
-                            Zombie();
+                            RPGMonsterFighter.Creatures.FullCreatures.Zombie();
                             break;
                         case 1:
-                            Spider();
+                            RPGMonsterFighter.Creatures.FullCreatures.Spider();
                             break;
                         case 2:
-                            Slime();
+                            RPGMonsterFighter.Creatures.FullCreatures.Slime();
                             break;
                         case 3:
-                            Wizard();
+                            RPGMonsterFighter.Creatures.FullCreatures.Wizard();
                             break;
                         case 4:
-                            //Archer();
+                            //RPGMonsterFighter.Creatures.FullCreatures.Archer();
                             break;
                         case 5:
-                            //Giant();
+                            //RPGMonsterFighter.Creatures.FullCreatures.Giant();
                             break;
                         case 6:
-                            //EffingDragon();
+                            //RPGMonsterFighter.Creatures.FullCreatures.EffingDragon();
                             break;
                         case 7:
-                            //Dwarf();
+                            //RPGMonsterFighter.Creatures.FullCreatures.Dwarf();
                             break;
                         case 8:
-                            //Glitch();
+                            //RPGMonsterFighter.Creatures.FullCreatures.Glitch();
                         default:
                             System.out.println("Uh oh! You run across a");//     YOU BROKE IT
                             System.out.println("But nobody came.");//            WHY?!?!?!?!
@@ -71,35 +70,35 @@ public class BattleSystem extends MonsterChoice {
                                 switch (monsterChoice) {
                                     case 0:
                                         hasChecked = true;
-                                        Zombie();
+                                        RPGMonsterFighter.Creatures.FullCreatures.Zombie();
                                         break;
                                     case 1:
                                         hasChecked = true;
-                                        Spider();
+                                        RPGMonsterFighter.Creatures.FullCreatures.Spider();
                                         break;
                                     case 2:
                                         hasChecked = true;
-                                        Slime();
+                                        RPGMonsterFighter.Creatures.FullCreatures.Slime();
                                         break;
                                     case 3:
                                         hasChecked = true;
-                                        Wizard();
+                                        RPGMonsterFighter.Creatures.FullCreatures.Wizard();
                                         break;
                                     case 4:
                                         hasChecked = true;
-                                        //Archer();
+                                        //RPGMonsterFighter.Creatures.FullCreatures.Archer();
                                         break;
                                     case 5:
                                         hasChecked = true;
-                                        //Giant();
+                                        //RPGMonsterFighter.Creatures.FullCreatures.Giant();
                                         break;
                                     case 6:
                                         hasChecked = true;
-                                        //EffingDragon();
+                                        //RPGMonsterFighter.Creatures.FullCreatures.EffingDragon();
                                         break;
                                     case 7:
                                         hasChecked = true;
-                                        //Dwarf();
+                                        //RPGMonsterFighter.Creatures.FullCreatures.Dwarf();
                                         break;
                                     default:
                                         System.out.println("GL1TC4 M0N2T3R:");
@@ -144,6 +143,8 @@ public class BattleSystem extends MonsterChoice {
                     }
             }
         }
-        RPGMonsterFighter.Encounters.World.LandGen();
+        if(!inBattle){
+            RPGMonsterFighter.Encounters.World.LandGen();
+        }
     }
 }
