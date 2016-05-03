@@ -60,13 +60,13 @@ public class DefaultCreature extends MessingAroundMain{
         }else if(random >= 50){
             System.out.println(name + " is hurt!");
         }else if(random >= 40){
-            System.out.println(name + " needs a ");
+            System.out.println(name + " needs a drink.");
         }else if(random >= 30){
             System.out.println(name + " has to catch it's breath.");
         }else if(random >= 20){
             System.out.println(name + " is getting a little tired.");
         }else if(random >= 10){
-            System.out.println(name + " looks like he's slowing down.");
+            System.out.println(name + " looks like it's slowing down.");
         }else{
             System.out.println("You broke it D:");
             System.out.println("Prepare for a GLITCH MONSTER!");
