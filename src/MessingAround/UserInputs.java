@@ -53,8 +53,8 @@ public class UserInputs {
     public static boolean attacking       = false;
     public static boolean justEncountered = false;
     public static boolean hasDefended     = false;
-    public static String  userName;
-    //public DefaultPlains Plains = new DefaultPlains(); 
+    public static String userName = "Null Player";
+    public static String weaponName = "Null Item";
     
     //                                                                           ----------------------------------------
     //                                                                           Andy's Rock Paper Scissors Stuff
