@@ -3,7 +3,7 @@ package RPGMonsterFighter.Encounters;
 import MessingAround.MessingAroundMain;
 
 public class ActSystem extends MessingAroundMain{
-    public static void actSystem(String[] args) {
+    public static void actSystem() {
         userAnswered = false;
         while(!userAnswered){
             System.out.flush();
@@ -30,12 +30,13 @@ public class ActSystem extends MessingAroundMain{
                         }
                     }
                     break;
+                    
                 case "SEARCH":
                     creatureRandom = NumGen.nextInt(100);
                     if(creatureRandom <= 60){
                         inBattle = true;
                         userAnswered = false;
-                        MonsterChoice.MonsterGen(args);
+                        MonsterChoice.MonsterGen();
                     }//                                                          stuff
                     if(creaturesDead >= 2){
                         System.out.println("But nobody came.");
@@ -43,7 +44,7 @@ public class ActSystem extends MessingAroundMain{
                     }
                     if(lootRandom >= 3){
                         userAnswered = false;
-                        ItemSearch.Search();
+                        ItemSystem.Search();
                     }
                     System.out.println("You find nothing here.");
                     break;
@@ -51,6 +52,9 @@ public class ActSystem extends MessingAroundMain{
                     System.out.println("Please input a valid response.");
                     break;
             }
+            
         }
+        
     }
+    
 }

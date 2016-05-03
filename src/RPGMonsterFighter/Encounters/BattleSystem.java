@@ -8,7 +8,7 @@ public class BattleSystem extends MonsterChoice {
 
     public static void BattleScript() {
         if (Player.health <= 0) {
-            alive = false;
+            isAlive = false;
             World.LandGen();
         }
         while (inBattle = true) {

@@ -2,7 +2,7 @@
 
  import RPGMonsterFighter.RPG_Game;
 public class MonsterChoice extends RPG_Game{
-    public static void MonsterGen(String[] args) {
+    public static void MonsterGen() {
         monsterChoice = NumGen.nextInt(7);
         if (isDeveloper){
             System.out.println("So, you're a developer.");
@@ -69,7 +69,6 @@ public class MonsterChoice extends RPG_Game{
                 System.out.println("Oh no!");
                 System.out.println("The smell of ROTTEN FLESH hits you.");
                 justEncountered = true;
-                Ecounters.BattleSystem.
                 break;
             case 1:
                 monsterChoice = 1;

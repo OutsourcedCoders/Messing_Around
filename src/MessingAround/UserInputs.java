@@ -49,7 +49,7 @@ public class UserInputs {
     public static boolean creatureHere    = false;
     public static boolean gotHit          = false;
     public static boolean inBattle        = false;
-    public static boolean alive           = true;
+    public static boolean isAlive           = true;
     public static boolean attacking       = false;
     public static boolean justEncountered = false;
     public static boolean hasDefended     = false;

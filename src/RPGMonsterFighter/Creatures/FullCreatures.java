@@ -31,7 +31,7 @@ public class FullCreatures extends RPGMonsterFighter.RPG_Game{
             System.out.println("You took " + Player.damage + " damage!");//        Tells people how much damage they took
         }
         if (plrHp == 0) {
-            alive = false;
+            isAlive = false;
         }
     }
 
@@ -63,7 +63,7 @@ public class FullCreatures extends RPGMonsterFighter.RPG_Game{
             System.out.println("You took " + damageTaken + " damage!");//        Tells people how much damage they took
         }
         if (plrHp == 0) {
-            alive = false;
+            isAlive = false;
         }
     }
     public static void Slime() {
@@ -95,7 +95,7 @@ public class FullCreatures extends RPGMonsterFighter.RPG_Game{
             System.out.println("You took " + Player.damage + " damage!");//      Tells people how much damage they took
         }
         if (plrHp == 0) {
-            alive = false;
+            isAlive = false;
         }
         if (Slime.health <= 0) {
             System.out.println("SLIME has died!");
@@ -141,7 +141,7 @@ public class FullCreatures extends RPGMonsterFighter.RPG_Game{
             System.out.println(Player.name + " took " + Player.damage + " damage!");//      Tells people how much damage they took
         }
         if (plrHp == 0) {
-            alive = false;
+            isAlive = false;
         }
 
     }
