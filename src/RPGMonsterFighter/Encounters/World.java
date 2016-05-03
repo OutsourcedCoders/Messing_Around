@@ -88,6 +88,7 @@ public class World extends UserInputs{
                 default:
                     System.out.println("a glitch :P");
                     break;
+                    
             }
         }
     }
