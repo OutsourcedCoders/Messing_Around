@@ -5,17 +5,21 @@ import RPGMonsterFighter.Creatures.DefaultCreature;
 //                                                                               Text RPG Simulator!
 //                                                                               Note: This is just the launcher.
 
-public class RPG_Game extends MessingAroundMain{
-    public static DefaultCreature Player = new DefaultCreature(plrHp, plrMana, plrDef);
+public class RPG_Game extends MessingAroundMain {
+
+    public static DefaultCreature Player = new DefaultCreature(userName, plrHp, plrMana, plrDef);
+
     public static void main(String[] args) {
         userAnswered = false;
         System.out.println("Hello, and welcome to Jasonface900's RPG Fighter");
         System.out.print("Ready to start the game? :");
-        while (!userAnswered){
+        while (!userAnswered) {
             userInput = sc.nextLine();//                                         Waits for input
-            switch(userInput.toUpperCase()){
+            switch (userInput.toUpperCase()) {
                 case "YES":
-                    System.out.println("Let's get started then!");
+                    System.out.println("As " + userName + " begins their adventure,");
+                    System.out.println("they hear a roaring sound in the distance,");
+                    System.out.println("calling them.");
                     userAnswered = true;
                     break;
                 case "NO":
@@ -30,6 +34,46 @@ public class RPG_Game extends MessingAroundMain{
         Player.setHealth(100);
         Player.setMana(0);
         Player.setDefense(0);
-        RPGMonsterFighter.Encounters.World.main(args);//                         Starts game
+        while(isAlive){
+            if(inBattle == true){
+                RPGMonsterFighter.Encounters.MonsterChoice.MonsterGen();
+            }
+            RPGMonsterFighter.Encounters.World.LandGen();
+            RPGMonsterFighter.Encounters.ActSystem.actSystem();
+        }
+        System.out.println();
+        System.out.println("The great hero known as " + userName + "has FALLEN.");
+        System.out.print("Their untimely demise was caused by ");
+        switch(monsterChoice){
+            case 0:
+                System.out.println("a deadly ZOMBIE.");
+                break;
+            case 1:
+                System.out.println("a poisonous SPIDER.");
+                break;
+            case 2:
+                System.out.println("a sticky SLIME MONSTER.");
+                break;
+            case 3:
+                System.out.println("an old MAGE.");
+                break;
+            case 4:
+                System.out.println("");
+                break;
+            case 5:
+                System.out.println("");
+                break;
+            case 6:
+                System.out.println("");
+                break;
+            case 7:
+                System.out.println("");
+                break;
+            default:
+                System.out.println("a glitch :P");
+                break;
+
+        }
+
     }
 }
