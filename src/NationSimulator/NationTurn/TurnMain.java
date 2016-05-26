@@ -32,6 +32,9 @@ public class TurnMain extends UserInputs{
                 case "FIGHT":
                     NationSimulator.NationActions.NationWarFight.main(args);
                     break;
+                case "BRIBE":
+                    NationSimulator.NationActions.NationWarBribe.main(args);
+                    break;
             }
         }
         NationSimulator.NationTurn.TurnEnd.main(args);
