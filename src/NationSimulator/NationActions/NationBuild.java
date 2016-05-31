@@ -6,13 +6,8 @@ public class NationBuild extends UserInputs{
     public static void main(String[] args) {
         while(turnSubActive) {            
             userAnswered = false;
-            System.out.println(nationName);
-            System.out.println("-------------------------------------------------------------------------------------------------------------------");
-            System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
-            System.out.println("   Build more homes   |  Build more trade roads  |");
-            System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
-            System.out.println("  Build more weapons  |           Exit           |");
-            System.out.println("-------------------------------------------------------------------------------------------------------------------");
+            userAction = "build";
+            NationSimulator.NationInfo.main(args);
             while(!userAnswered) {
                 userSubAction = sc.nextLine();
                 switch(userSubAction.toUpperCase()) {
@@ -100,7 +95,7 @@ public class NationBuild extends UserInputs{
                             else{
                                 roadCount = roadCount + roadBuild;
                                 nationWealth = nationWealth - roadBuild * roadCost;
-                                System.out.println("Weapons are slated to be built");
+                                System.out.println("Roads are slated to be built");
                                 System.out.println("-------------------------------------------------------------------------------------------------------------------");
                                 System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
                                 System.out.println("   Build more homes   |  Build more trade roads  |");

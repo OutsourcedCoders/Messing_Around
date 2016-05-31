@@ -47,7 +47,7 @@ public class MessingAroundMain extends UserInputs{
         }
         System.out.println("What's your name?");
         System.out.print(": ");
-        userName = sc.next();
+        userName = sc.nextLine();
         userAnswered = false;//                                                  Game Selection
         while(!userAnswered) {
             System.out.println("What kinda game would you like to play?");

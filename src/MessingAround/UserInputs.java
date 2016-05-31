@@ -70,6 +70,7 @@ public class UserInputs {
     //                                                                           Nation Stuff
     public static int bribeAttempt         = 0;
     public static int debtCount            = 0;
+    public static int enemyAttackSoldiers  = 0;
     public static int enemyBribe           = 0;
     public static int enemyPopulation      = 0;
     public static int enemyWeapons         = 0;
