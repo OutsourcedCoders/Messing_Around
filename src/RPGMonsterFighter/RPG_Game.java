@@ -34,13 +34,15 @@ public class RPG_Game extends MessingAroundMain {
         Player.setHealth(100);
         Player.setMana(0);
         Player.setDefense(0);
+        
         while(isAlive){
-            if(inBattle == true){
+            while(inBattle){
                 RPGMonsterFighter.Encounters.MonsterChoice.MonsterGen();
             }
             RPGMonsterFighter.Encounters.World.LandGen();
             RPGMonsterFighter.Encounters.ActSystem.actSystem();
         }
+        
         System.out.println();
         System.out.println("The great hero known as " + userName + "has FALLEN.");
         System.out.print("Their untimely demise was caused by ");

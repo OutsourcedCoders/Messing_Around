@@ -25,6 +25,7 @@ public class MessingAroundMain extends UserInputs{
             case "SO SO":
                 System.out.println("That's okay.");
                 userAnswered = true;
+		System.out.println("");
                 break;
             case "OK":
                 System.out.println("That's fine.");
@@ -33,6 +34,10 @@ public class MessingAroundMain extends UserInputs{
             case "MAD":
                 System.out.println("WHY YOU MAD BRO!");
                 userAnswered = true;
+		System.out.println("Well, you're going to get booted from");
+		System.out.println("the program now. GG NO REE");
+		System.out.println("-The Devs");
+		System.exit(0);
                 break;
             case "DEVELOPER":
                 System.out.println("So, you're a dev.");

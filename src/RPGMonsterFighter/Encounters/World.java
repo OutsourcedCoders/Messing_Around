@@ -4,7 +4,7 @@ import MessingAround.UserInputs;
 
 public class World extends UserInputs{
     public static void LandGen(){
-        while (!inBattle  && isAlive){
+        while (!landChosen){
             int generatedLandRand = NumGen.nextInt(landRandom);
             switch(generatedLandRand){
                 case 0:
@@ -25,19 +25,19 @@ public class World extends UserInputs{
                     break;
                 case 4:
                     userAnswered = false;
-                    
+                    //RPGMonsterFighter.Lands.FullLands.descTundra();
                     break;
                 case 5:
                     userAnswered = false;
-                    
+                    //RPGMonsterFighter.Lands.FullLands.descVillage();
                     break;
                 case 6:
                     userAnswered = false;
-                    
+                    //RPGMonsterFighter.Lands.FullLands.descMountain();
                     break;
                 case 7:
                     userAnswered = false;
-                    
+                    //RPGMonsterFighter.Lands.FullLands.desc();
                     break;
                 case 8:
                     userAnswered = false;

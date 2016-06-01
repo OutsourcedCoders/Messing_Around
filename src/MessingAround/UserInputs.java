@@ -16,10 +16,6 @@ import java.util.Scanner;
 
 public class UserInputs {
     
-    public static void clearScreen() {  
-    System.out.print("\033[H\033[2J");    
-    }  
-    
     //                                                                           ----------------------------------------
     //                                                                           Jorge's Simple Input Scanner
     public static Scanner sc = new Scanner(System.in);
@@ -27,8 +23,8 @@ public class UserInputs {
     public static String userGame  = "None Selected";
     public static boolean userAnswered = false;
     public static boolean isDeveloper  = false;
-    //                                                                           ----------------------------------------
-    //                                                                           Jorge's 
+
+    //                                                                           RPG Monster Fighter
     public static int monsterDef     = 10;
     public static int weaponClass    = 1;
     public static int monsterChoice  = 8;
@@ -49,10 +45,11 @@ public class UserInputs {
     public static boolean creatureHere    = false;
     public static boolean gotHit          = false;
     public static boolean inBattle        = false;
-    public static boolean isAlive           = true;
+    public static boolean isAlive         = true;
     public static boolean attacking       = false;
     public static boolean justEncountered = false;
     public static boolean hasDefended     = false;
+    public static boolean landChosen      = false;
     public static String userName = "Null Player";
     public static String weaponName = "Null Item";
     
