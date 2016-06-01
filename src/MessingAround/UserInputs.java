@@ -65,11 +65,14 @@ public class UserInputs {
     public static Random NumGen = new Random();
     
     //                                                                           Nation Stuff
+    public static int bribeAttempt         = 0;
     public static int debtCount            = 0;
+    public static int enemyAttackSoldiers  = 0;
     public static int enemyBribe           = 0;
     public static int enemyPopulation      = 0;
     public static int enemyWeapons         = 0;
     public static int enemyWealth          = 0;
+    public static int enemySoldiers        = 0;
     public static int houseBuild           = 0;
     public static int houseCost            = 100;
     public static int houseCount           = 50;
@@ -90,6 +93,7 @@ public class UserInputs {
     public static int weaponCost           = 10;
     public static int weaponCount          = 100;
     public static double enemyStrength         = 0;
+    public static double enemySoldierStrength  = 0;
     public static double eventWealthEffect     = 0;
     public static double eventPopulationEffect = 0;
     public static double eventStrengthEffect   = 0;

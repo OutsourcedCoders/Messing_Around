@@ -13,6 +13,7 @@ public class TurnMain extends UserInputs{
                 switch(userAction.toUpperCase()) {
                     case "BUILD":
                         NationSimulator.NationActions.NationBuild.main(args);
+                        NationSimulator.NationInfo.main(args);
                         break;
                     case "END TURN":
                         turnActive = false;
@@ -23,14 +24,22 @@ public class TurnMain extends UserInputs{
         }
         else {
             userAction = "War";
-            NationSimulator.NationInfo.main(args);
-            NationSimulator.EnemyNation.main(args);
-            System.out.println(nationName + " is at war.");//                    War Scenario
+            NationSimulator.NationInfo.main(args);//                    War Scenario
             System.out.println("What would you do?");
             userAction = sc.nextLine();
             switch(userAction.toUpperCase()) {
-                case "FIGHT":
+                case "ATTACK":
                     NationSimulator.NationActions.NationWarFight.main(args);
+                    break;
+                case "BRIBE ENEMY":
+                    NationSimulator.NationActions.NationWarBribe.main(args);
+                    break;
+                case "BUILD":
+                    NationSimulator.NationActions.NationBuild.main(args);
+                    NationSimulator.NationInfo.main(args);
+                    break;
+                case "END TURN":
+                    NationSimulator.NationActions.EnemyAttack.main(args);
                     break;
             }
         }
