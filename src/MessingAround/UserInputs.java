@@ -9,9 +9,12 @@ package MessingAround;
 //                                                                                    Sci1017
 //
 //                                                                               ------------------
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class UserInputs {
@@ -102,6 +105,7 @@ public class UserInputs {
     public static double eventStrengthEffect   = 0;
     public static double individualStrength    = 0.1;
     public static double nationGrowthRate      = 1;
+    public static double placeholder          = 0;
     public static double weaponTech            = 0.001;
     public static float nationStrength        = 10;
     public static boolean turnActive    = true;
@@ -111,7 +115,8 @@ public class UserInputs {
     public static String nationEvent    = "Default";
     public static String userAction     = "Default";
     public static String userSubAction  = "Default";
-    public static String wealthFormatS  = "##########";
+    public static String wealthFormatS  = "##########G";
+    public static DecimalFormat f = new DecimalFormat("###########.##");
     public static DecimalFormat wealthFormat = new DecimalFormat(wealthFormatS);
     //                                                                          ------------------------------------------
     //                                                                           Ben's Game Stuff (Hopefully)
