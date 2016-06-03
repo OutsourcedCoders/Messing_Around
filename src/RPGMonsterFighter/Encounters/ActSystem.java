@@ -19,7 +19,7 @@ public class ActSystem extends MessingAroundMain{
                         userInput = sc.nextLine();
                         switch(userInput.toUpperCase()){
                             case "YES":
-                                RPGMonsterFighter.Encounters.World.LandGen();
+                                userAnswered = true;
                                 break;
                             case "NO":
                                 userAnswered = true;
@@ -52,7 +52,7 @@ public class ActSystem extends MessingAroundMain{
                     System.out.println("Please input a valid response.");
                     break;
             }
-            
+            userAnswered = true;
         }
         
     }
