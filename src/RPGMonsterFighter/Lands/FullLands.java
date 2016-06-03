@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package RPGMonsterFighter.Lands;
+
 import RPGMonsterFighter.RPG_Game;
-/**
- *
- * @author jorge_flore141
- */
+
 public class FullLands extends RPG_Game{
     public static void descDesert(){
         creatureHere = NumGen.nextBoolean();
@@ -33,5 +26,29 @@ public class FullLands extends RPG_Game{
         System.out.println("\nYou see a RIVER next to you.");
         System.out.println("Water rushes past.");
         System.out.println("What do you do?");
+    }
+    public static void descTundra() {
+        creatureHere = NumGen.nextBoolean();
+        System.out.println("\nYou see the frozen wasteland known as TUNDRA.");
+        System.out.println("Snow falls in a calming pattern.");
+        System.out.println("What do you do?");
+
+    }
+    public static void descVillage() {
+        creatureHere = NumGen.nextBoolean();
+        System.out.println("\nYou notice a beautiful VILLAGE.");
+        System.out.println("The citizens are walking around, noticing the");
+        System.out.println("GREAT HERO named " + userName + ".");
+        System.out.println("What do you do?");
+    }
+    public static void descMountain() {
+        creatureHere = NumGen.nextBoolean();
+        System.out.println("\nYou stand at the peak of a frigid MOUNTAIN.");
+        System.out.println("Great puffy clouds surround you.");
+        System.out.println("What do you do?");
+    }
+    public static void descGlitch() {
+        creatureHere = NumGen.nextBoolean();
+        System.out.println("\nY0u sse3");
     }
 }
