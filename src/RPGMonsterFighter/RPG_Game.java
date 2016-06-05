@@ -34,12 +34,12 @@ public class RPG_Game extends MessingAroundMain {
         Player.setHealth(100);
         Player.setMana(0);
         Player.setDefense(0);
-        
+        RPGMonsterFighter.Encounters.World.LandGen();
         while(isAlive){
             while(inBattle){
                 RPGMonsterFighter.Encounters.MonsterChoice.MonsterGen();
             }
-            RPGMonsterFighter.Encounters.World.LandGen();
+            
             RPGMonsterFighter.Encounters.ActSystem.actSystem();
         }
         
@@ -76,6 +76,5 @@ public class RPG_Game extends MessingAroundMain {
                 break;
 
         }
-
     }
 }
