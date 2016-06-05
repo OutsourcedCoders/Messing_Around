@@ -4,9 +4,10 @@ import MessingAround.UserInputs;
 
 public class NationBuild extends UserInputs{
     public static void main(String[] args) {
-        while(turnSubActive) {            
-            userAnswered = false;
-            userAction = "build";
+        userAction = "build";
+        turnSubActive = true;
+        userAnswered = false;
+        while(turnSubActive) {
             NationSimulator.NationInfo.main(args);
             while(!userAnswered) {
                 userSubAction = sc.nextLine();
@@ -29,12 +30,7 @@ public class NationBuild extends UserInputs{
                                         houseCount = houseCount + houseBuild;
                                         nationWealth = nationWealth - houseBuild * houseCost;
                                         System.out.println("Houses are slated to be built");
-                                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
-                                        System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
-                                        System.out.println("   Build more homes   |  Build more trade roads  |");
-                                        System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
-                                        System.out.println("  Build more weapons  |           Exit           |");
-                                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                                        NationSimulator.NationInfo.main(args);
                                         break;
                                     case "NO":
                                         System.out.println("Build has been cancelled");
@@ -48,12 +44,7 @@ public class NationBuild extends UserInputs{
                                 houseCount = houseCount + houseBuild;
                                 nationWealth = nationWealth - houseBuild * houseCost;
                                 System.out.println("Houses are slated to be built");
-                                System.out.println("-------------------------------------------------------------------------------------------------------------------");
-                                System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
-                                System.out.println("   Build more homes   |  Build more trade roads  |");
-                                System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
-                                System.out.println("  Build more weapons  |           Exit           |");
-                                System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                                NationSimulator.NationInfo.main(args);                            
                             }
                         }
                         else{
@@ -77,12 +68,7 @@ public class NationBuild extends UserInputs{
                                         roadCount = roadCount + roadBuild;
                                         nationWealth = nationWealth - roadBuild * roadCost;
                                         System.out.println("Roads are slated to be built");
-                                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
-                                        System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
-                                        System.out.println("   Build more homes   |  Build more trade roads  |");
-                                        System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
-                                        System.out.println("  Build more weapons  |           Exit           |");
-                                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                                        NationSimulator.NationInfo.main(args);                                        
                                         break;
                                     case "NO":
                                         System.out.println("Build has been cancelled");
@@ -96,12 +82,7 @@ public class NationBuild extends UserInputs{
                                 roadCount = roadCount + roadBuild;
                                 nationWealth = nationWealth - roadBuild * roadCost;
                                 System.out.println("Roads are slated to be built");
-                                System.out.println("-------------------------------------------------------------------------------------------------------------------");
-                                System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
-                                System.out.println("   Build more homes   |  Build more trade roads  |");
-                                System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
-                                System.out.println("  Build more weapons  |           Exit           |");
-                                System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                                NationSimulator.NationInfo.main(args);                            
                             }
                         }
                         else {
@@ -127,12 +108,7 @@ public class NationBuild extends UserInputs{
                                         individualStrength = weaponCount * weaponTech;
                                         nationStrength     = (float) (nationPopulation * individualStrength);                             
                                         System.out.println("Weapons are slated to be built");
-                                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
-                                        System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
-                                        System.out.println("   Build more homes   |  Build more trade roads  |");
-                                        System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
-                                        System.out.println("  Build more weapons  |           Exit           |");
-                                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                                        NationSimulator.NationInfo.main(args);                                        
                                         break;
                                     case "NO":
                                         System.out.println("Build has been cancelled");
@@ -148,12 +124,7 @@ public class NationBuild extends UserInputs{
                                 individualStrength = weaponCount * weaponTech;
                                 nationStrength     = (float) (nationPopulation * individualStrength); 
                                 System.out.println("Weapons are slated to be built");
-                                System.out.println("-------------------------------------------------------------------------------------------------------------------");
-                                System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
-                                System.out.println("   Build more homes   |  Build more trade roads  |");
-                                System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
-                                System.out.println("  Build more weapons  |           Exit           |");
-                                System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                                NationSimulator.NationInfo.main(args);                            
                             }
                         }
                         else {
@@ -162,16 +133,12 @@ public class NationBuild extends UserInputs{
                         break;
                     case "HELP":
                         System.out.println(nationName);
-                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
-                        System.out.print("|    Nation Wealth    |  Nation Population  |  Nation Strength  |");
-                        System.out.println("   Build more homes   |  Build more trade roads  |");
-                        System.out.print("|    " + nationWealth + "\t      |  " + nationPopulation + "\t\t    |  " + nationStrength + "\t\t|");
-                        System.out.println("  Build more weapons  |           Exit           |");
-                        System.out.println("-------------------------------------------------------------------------------------------------------------------");
+                        NationSimulator.NationInfo.main(args);                        
                         break;
                     case "EXIT":
                         userAnswered = true;
                         turnSubActive = false;
+                        userAction = "default";
                         break;
                     default:
                         break;

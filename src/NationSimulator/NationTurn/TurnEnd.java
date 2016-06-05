@@ -6,7 +6,7 @@ public class TurnEnd extends UserInputs{
     public static void main(String args[]) {
         populationLimit = (int) (houseTech * houseCount);
         nationGrowthRate = ((double)houseTech/houseCount); 
-        nationGrowthRate = nationGrowthRate+ 1 + eventPopulationEffect;
+        nationGrowthRate = nationGrowthRate + 1 + eventPopulationEffect;
         nationPopulation = (int) (nationPopulation * (nationGrowthRate)); 
         if (nationPopulation > populationLimit) {
             nationPopulation = populationLimit;
@@ -15,13 +15,17 @@ public class TurnEnd extends UserInputs{
             System.out.println(nationName + "'s people have been wiped out.");
             gameOn = false;
         }
+        else if(nationPopulation == 1) {
+            System.out.println(nationName + "'s people have basically been wiped out");
+            gameOn = false;
+        }
         individualStrength = (weaponCount * weaponTech) + eventStrengthEffect;
         nationStrength     = (float) (nationPopulation * individualStrength);
         nationWealthInc    = (int) (roadCount * roadTech + eventWealthEffect);
         nationWealth       = nationWealth + nationWealthInc; 
         if(nationWealth < 0) {
             System.out.println("You are in debt.");
-            System.out.println("You will lose if debt is not eliminated in 2 years.");
+            System.out.println("You will lose if debt is not eliminated in " + Math.abs(0-debtCount) + " years.");
             debtCount++;
             if(debtCount == 2) {
                 System.out.println("You have lost the game.");

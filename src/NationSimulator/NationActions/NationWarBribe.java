@@ -12,8 +12,8 @@ public class NationWarBribe extends UserInputs{
         }
         else{
             System.out.println("The enemy nation was not swayed by the bribe; the war continues.");
-            NationSimulator.NationActions.NationWarFight.main(args);
+            NationSimulator.NationActions.EnemyAttack.main(args);
         }
-            eventWealthEffect = -bribeAttempt;
+            nationWealth -= bribeAttempt;
     }
 }

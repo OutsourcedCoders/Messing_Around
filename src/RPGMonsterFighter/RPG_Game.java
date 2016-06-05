@@ -36,6 +36,7 @@ public class RPG_Game extends MessingAroundMain {
         Player.setDefense(0);
         RPGMonsterFighter.Encounters.World.LandGen();
         while(isAlive){
+            userAnswered = false;
             while(inBattle){
                 RPGMonsterFighter.Encounters.MonsterChoice.MonsterGen();
             }

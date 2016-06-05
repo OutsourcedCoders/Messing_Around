@@ -73,9 +73,9 @@ public class NationEvents extends UserInputs{
         else {
             nationEvent = "Your nation has gained more territory.";
             nationEventNum = 8;
-            roadCount = (int) (roadCount * (Math.random() / 2));
-            houseCount = (int) (houseCount * (Math.random() / 3));
-            weaponCount = (int) (weaponCount * (Math.random() / 2.5));
+            roadCount += (int) (roadCount * (Math.random() / 2));
+            houseCount += (int) (houseCount * (Math.random() / 3));
+            weaponCount += (int) (weaponCount * (Math.random() / 2.5));
             eventPopulationEffect = ((Math.random() + 3) / 8);
             eventStrengthEffect = 0;
             eventWealthEffect = 0;
