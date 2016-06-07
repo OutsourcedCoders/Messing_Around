@@ -10,6 +10,7 @@ package MessingAround;
 //                                                                               --------------------
 public class MessingAroundMain extends UserInputs{
     public static void main(String[] args) {
+        MSClearScreen();
         System.out.print("Hey, how are yah?: ");
         while(!userAnswered) {
         userInput = sc.nextLine();
@@ -34,6 +35,7 @@ public class MessingAroundMain extends UserInputs{
             case "MAD":
                 System.out.println("WHY YOU MAD BRO!");
                 userAnswered = true;
+                MSClearScreen();
 		System.out.println("Well, you're going to get booted from");
 		System.out.println("the program now. GG NO REE");
 		System.out.println("-The Devs");
@@ -50,6 +52,7 @@ public class MessingAroundMain extends UserInputs{
                 break;
             }
         }
+        MSClearScreen();
         System.out.println("What's your name?");
         System.out.print(": ");
         userName = sc.nextLine();
@@ -69,30 +72,24 @@ public class MessingAroundMain extends UserInputs{
                 case "NATION SIMULATOR":
                     userGame = userInput;
                     userAnswered = true;
+                    MSClearScreen();
                     NationSimulator.NationMain.main(args);
                     break;
                 case "ROCK PAPER SCISSORS":
                     System.out.println("\nAlright.");
                     userGame = userInput;//                                      Jorge:
                     userAnswered = true;//                                        IT WORKS!
+                    MSClearScreen();
                     RPS.RockPaperScissors.main(args);
                     break;
                 case "RPG":
-                    System.out.println("\nHell yeah!");
                     userAnswered = true;
+                    MSClearScreen();
                     RPGMonsterFighter.RPG_Game.main(args);
                 case "TIC TAC TOE":
-                    System.out.println("Never hate the classics");
+                    MSClearScreen();
                     TicTacToe.Game.main(args);
                     break;
-                    //                                                           ----------------------------
-                    //                                                                EASTER EGGS START!
-                    //                                                           ----------------------------
-                    //                                                           Yes, I'm serious. Go crazy!
-                    //                                                            NOTE: nothing beyond this
-                    //                                                            should be taken seriously.
-                    //                                                                  -Jasonface900
-                    //                                                           ----------------------------
                 case "SECRET":
                     System.out.println("It's a secret to everybody.");
                     break;
