@@ -17,10 +17,28 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-public class UserInputs {
-    
-    //                                                                           ----------------------------------------
-    //                                                                           Jorge's Simple Input Scanner
+public class UserInputs {//                                                      ----------------------------------------
+    //                                                                           Jorge's clear screen command.
+    //clear screen command
+    public static void CLS(String... arg) throws IOException, InterruptedException {
+        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+    }
+    public static void RPGClearScreen(){
+        try {
+            CLS();
+        } catch (IOException | InterruptedException ex) {
+            Logger.getLogger(RPGMonsterFighter.RPG_Game.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    //                                                                           Clear screen for launcher.
+    public static void MSClearScreen(){
+        try{
+            CLS();
+        }catch(IOException | InterruptedException ex){
+            Logger.getLogger(MessingAround.MessingAroundMain.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    //                                                                           Simple Input Scanner
     public static Scanner sc = new Scanner(System.in);
     public static String userInput = "User";
     public static String userGame  = "None Selected";

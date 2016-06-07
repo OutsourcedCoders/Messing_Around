@@ -11,12 +11,14 @@ public class RPG_Game extends MessingAroundMain {
 
     public static void main(String[] args) {
         userAnswered = false;
+        MessingAround.UserInputs.RPGClearScreen();
         System.out.println("Hello, and welcome to Jasonface900's RPG Fighter");
         System.out.print("Ready to start the game? :");
         while (!userAnswered) {
             userInput = sc.nextLine();//                                         Waits for input
             switch (userInput.toUpperCase()) {
                 case "YES":
+                    MessingAround.UserInputs.RPGClearScreen();
                     System.out.println("As " + userName + " begins their adventure,");
                     System.out.println("they hear a roaring sound in the distance,");
                     System.out.println("calling them.");
@@ -34,6 +36,7 @@ public class RPG_Game extends MessingAroundMain {
         Player.setHealth(100);
         Player.setMana(0);
         Player.setDefense(0);
+        MessingAround.UserInputs.RPGClearScreen();
         RPGMonsterFighter.Encounters.World.LandGen();
         while(isAlive){
             userAnswered = false;
