@@ -30,7 +30,7 @@ public class TurnIntro extends UserInputs{
                 else{
                     System.out.print("-----------------------------");
                 }
-                for(int i = -1; i <= nationName.length() + nationName.length() + nationEvent.length(); i++){
+                for(int i = -1; i <= nationName.length() + nationName.length(); i++){
                     System.out.print("-");
                 }
             }
@@ -41,7 +41,7 @@ public class TurnIntro extends UserInputs{
                 System.out.println(nationEvent + "|");
             }
             else{
-                System.out.println(nationName + " is at war. | " + nationEvent + "|");
+                System.out.println(nationName + " is at war. |");
             }
             NationSimulator.NationTurn.TurnMain.main(args);
         }

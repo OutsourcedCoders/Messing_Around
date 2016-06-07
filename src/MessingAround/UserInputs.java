@@ -69,7 +69,7 @@ public class UserInputs {
     
     //                                                                           Nation Stuff
     public static int bribeAttempt         = 0;
-    public static int debtCount            = 0;
+    public static int debtCount            = -1;
     public static int enemyAttackSoldiers  = 0;
     public static int enemyBribe           = 0;
     public static int enemyPopulation      = 0;
@@ -92,6 +92,7 @@ public class UserInputs {
     public static int roadTech             = 10;
     public static int sentToWar            = 0;
     public static int turnCount            = 0;
+    public static int userTick             = 0;
     public static int weaponBuild          = 0;
     public static int weaponCost           = 10;
     public static int weaponCount          = 100;

@@ -45,11 +45,11 @@ public class NationWarFight extends UserInputs{
         else {
             System.out.println("You have successfully repelled the invasion.");
             enemyStrength = (enemySoldierStrength - sentToWar * individualStrength);
-            placeholder = (int) (sentToWar * individualStrength / enemySoldierStrength);
+            placeholder = (int) ((sentToWar * individualStrength) * .2);
             weaponCount = (int) (weaponCount - (sentToWar * individualStrength / enemySoldierStrength));
             nationPopulation = (int) (nationPopulation + (placeholder - sentToWar));
             System.out.println(Math.round(Math.abs(placeholder - sentToWar)) + " soldiers were slain.");
-            if(Math.random() > .33) {
+            if(Math.random() > .66) {
                 System.out.println("The enemy has withdrawn from the war.");
                 warOn = false;
             }

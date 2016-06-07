@@ -24,25 +24,33 @@ public class TurnMain extends UserInputs{
                 }
             }
         }
-        else {
+        else {//                                                                 War Scenario
             userAction = "War";
-            NationSimulator.NationInfo.main(args);//                             War Scenario
-            System.out.println("What would you do?");
-            userAction = sc.nextLine();
-            switch(userAction.toUpperCase()) {
-                case "ATTACK":
-                    NationSimulator.NationActions.NationWarFight.main(args);
-                    break;
-                case "BRIBE ENEMY":
-                    NationSimulator.NationActions.NationWarBribe.main(args);
-                    break;
-                case "BUILD":
-                    NationSimulator.NationActions.NationBuild.main(args);
-                    NationSimulator.NationInfo.main(args);
-                    break;
-                case "END TURN":
-                    NationSimulator.NationActions.EnemyAttack.main(args);
-                    break;
+            NationSimulator.NationInfo.main(args);
+            while(turnActive) { 
+                System.out.println("What would you do?");
+                userAction = sc.nextLine();
+                switch (userAction.toUpperCase()) {
+                    case "ATTACK":
+                        enemyAttackSoldiers = (int) (enemySoldiers / Math.random() * Math.random() + 5);
+                        NationSimulator.NationActions.NationWarFight.main(args);
+                        turnActive = false;
+                        break;
+                    case "BRIBE ENEMY":
+                        NationSimulator.NationActions.NationWarBribe.main(args);
+                        turnActive = false;
+                        break;
+                    case "BUILD":
+                        NationSimulator.NationActions.NationBuild.main(args);
+                        NationSimulator.NationInfo.main(args);
+                        break;
+                    case "END TURN":
+                        NationSimulator.NationActions.EnemyAttack.main(args);
+                        turnActive = false;
+                        break;
+                    default:
+                        break;
+                }
             }
         }
         NationSimulator.NationTurn.TurnEnd.main(args);

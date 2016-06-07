@@ -56,9 +56,6 @@ public class NationEvents extends UserInputs{
         else if(nationNumGen <= 90) {
             nationEvent = "Technology has been advanced significantly. Building costs are reduced by 25%";
             nationEventNum = 6;
-            houseCost  = (int) (houseCost * .75);
-            roadCost   = (int) (roadCost * .75);
-            weaponCost = (int) (weaponCost * .75);
             eventPopulationEffect = 0;
             eventStrengthEffect = 0;
             eventWealthEffect = 0;
